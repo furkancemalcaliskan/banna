@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Name",
+    "type": "string",
+    "required": true,
+    "max_length": 200,
+    "filterable": true,
+    "show_in_ui": true
+  },
+  {
+    "name": "Description",
+    "type": "textarea",
+    "required": false,
+    "max_length": 2000,
+    "filterable": true,
+    "show_in_ui": true
+  }
+]

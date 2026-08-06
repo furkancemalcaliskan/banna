@@ -1,0 +1,91 @@
+{
+  "AbpAccount": {
+    "500Message": "Chyba serveru",
+    "Cancel": "Zrušit",
+    "ChangePassword": "Změnit heslo",
+    "DefaultErrorMessage": "Došlo k neočekávané chybě.",
+    "DefaultErrorMessage401": "Neautorizováno",
+    "DefaultErrorMessage401Detail": "Nemáte oprávnění provést tuto operaci.",
+    "DefaultErrorMessage403": "Zakázáno",
+    "DefaultErrorMessage403Detail": "Nemáte oprávnění provést tuto operaci.",
+    "DefaultErrorMessage404": "Nenalezeno",
+    "DefaultErrorMessage404Detail": "Požadovaný zdroj nebyl nalezen.",
+    "DisplayName:CurrentPassword": "Aktuální heslo",
+    "DisplayName:NewPassword": "Nové heslo",
+    "InternalServerErrorMessage": "Došlo k interní chybě serveru.",
+    "Login": "Přihlásit se",
+    "Logout": "Odhlásit se",
+    "MyAccount": "Můj účet",
+    "Password": "Heslo",
+    "RememberMe": "Zapamatovat si mě",
+    "Save": "Uložit",
+    "UserNameOrEmailAddress": "Uživatelské jméno nebo e-mail",
+    "ThisFieldIsRequired": "Toto pole je povinné."
+  },
+  "AbpIdentity": {
+    "Delete": "Smazat",
+    "DisplayName:CurrentPassword": "Aktuální heslo",
+    "DisplayName:LockoutEnabled": "Povolit uzamčení",
+    "DisplayName:Name": "Jméno",
+    "DisplayName:NewPassword": "Nové heslo",
+    "DisplayName:Surname": "Příjmení",
+    "EmailAddress": "E-mailová adresa",
+    "Name": "Jméno",
+    "Password": "Heslo",
+    "PhoneNumber": "Telefonní číslo",
+    "Roles": "Role",
+    "Save": "Uložit",
+    "Surname": "Příjmení",
+    "UserDeletionConfirmationMessage": "Opravdu chcete smazat uživatele {{0}}?",
+    "UserInformations": "Informace o uživateli",
+    "UserName": "Uživatelské jméno",
+    "Users": "Uživatelé"
+  },
+  "AbpSettingManagement": {
+    "Settings": "Nastavení"
+  },
+  "AbpTenantManagement": {
+    "DisplayName:AdminEmailAddress": "E-mail administrátora",
+    "DisplayName:AdminPassword": "Heslo administrátora",
+    "TenantDeletionConfirmationMessage": "Opravdu chcete smazat tenanta {{0}}?",
+    "TenantName": "Název tenant",
+    "Tenants": "Tenanty"
+  },
+  "AbpUi": {
+    "AreYouSure": "Jste si jisti?",
+    "Cancel": "Zrušit",
+    "ChangePassword": "Změnit heslo",
+    "Delete": "Smazat",
+    "Edit": "Upravit",
+    "Error": "Chyba",
+    "Language": "Jazyk",
+    "LoadMore": "Načíst více",
+    "Ok": "OK",
+    "PagerSearch": "Hledat",
+    "Select": "Vybrat",
+    "Yes": "Ano"
+  },
+  "AbpUiMultiTenancy": {
+    "GivenTenantIsNotAvailable": "Daný tenant není dostupný.",
+    "Name": "Jméno",
+    "NotSelected": "Nevybráno",
+    "Switch": "Přepnout",
+    "SwitchTenantHint": "Vyberte tenanta pro přepnutí.",
+    "Tenant": "Tenant"
+  },
+  "App": {
+    "NetworkErrorMessage": "Zkontrolujte připojení a zkuste to znovu.",
+    "NetworkErrorTitle": "Žádné připojení k internetu"
+  },
+  "Theme": {
+    "ColorMode": "Motiv",
+    "Dark": "Tmavý",
+    "Light": "Světlý",
+    "System": "Systém"
+  },
+  "MyProjectName": {
+    "Menu:Home": "Home",
+    "Welcome": "Vítejte",
+    "LongWelcomeMessage": "Vítejte v aplikaci. Toto je startovací projekt založený na ABP frameworku. Pro více informací, navštivte abp.io."
+  }
+}

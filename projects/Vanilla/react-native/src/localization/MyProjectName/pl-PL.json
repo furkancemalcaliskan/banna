@@ -1,0 +1,91 @@
+{
+  "AbpAccount": {
+    "500Message": "Błąd serwera",
+    "Cancel": "Anuluj",
+    "ChangePassword": "Zmień hasło",
+    "DefaultErrorMessage": "Wystąpił nieoczekiwany błąd.",
+    "DefaultErrorMessage401": "Nieautoryzowany",
+    "DefaultErrorMessage401Detail": "Nie masz uprawnień do wykonania tej operacji.",
+    "DefaultErrorMessage403": "Zabronione",
+    "DefaultErrorMessage403Detail": "Nie masz uprawnień do wykonania tej operacji.",
+    "DefaultErrorMessage404": "Nie znaleziono",
+    "DefaultErrorMessage404Detail": "Żądany zasób nie został znaleziony.",
+    "DisplayName:CurrentPassword": "Aktualne hasło",
+    "DisplayName:NewPassword": "Nowe hasło",
+    "InternalServerErrorMessage": "Wystąpił wewnętrzny błąd serwera.",
+    "Login": "Zaloguj się",
+    "Logout": "Wyloguj się",
+    "MyAccount": "Moje konto",
+    "Password": "Hasło",
+    "RememberMe": "Zapamiętaj mnie",
+    "Save": "Zapisz",
+    "UserNameOrEmailAddress": "Nazwa użytkownika lub adres e-mail",
+    "ThisFieldIsRequired": "To pole jest wymagane."
+  },
+  "AbpIdentity": {
+    "Delete": "Usuń",
+    "DisplayName:CurrentPassword": "Aktualne hasło",
+    "DisplayName:LockoutEnabled": "Blokada włączona",
+    "DisplayName:Name": "Imię",
+    "DisplayName:NewPassword": "Nowe hasło",
+    "DisplayName:Surname": "Nazwisko",
+    "EmailAddress": "Adres e-mail",
+    "Name": "Imię",
+    "Password": "Hasło",
+    "PhoneNumber": "Numer telefonu",
+    "Roles": "Role",
+    "Save": "Zapisz",
+    "Surname": "Nazwisko",
+    "UserDeletionConfirmationMessage": "Czy na pewno chcesz usunąć użytkownika {{0}}?",
+    "UserInformations": "Informacje o użytkowniku",
+    "UserName": "Nazwa użytkownika",
+    "Users": "Użytkownicy"
+  },
+  "AbpSettingManagement": {
+    "Settings": "Ustawienia"
+  },
+  "AbpTenantManagement": {
+    "DisplayName:AdminEmailAddress": "Adres e-mail administratora",
+    "DisplayName:AdminPassword": "Hasło administratora",
+    "TenantDeletionConfirmationMessage": "Czy na pewno chcesz usunąć najemcę {{0}}?",
+    "TenantName": "Nazwa najemcy",
+    "Tenants": "Najemcy"
+  },
+  "AbpUi": {
+    "AreYouSure": "Czy jesteś pewien?",
+    "Cancel": "Anuluj",
+    "ChangePassword": "Zmień hasło",
+    "Delete": "Usuń",
+    "Edit": "Edytuj",
+    "Error": "Błąd",
+    "Language": "Język",
+    "LoadMore": "Załaduj więcej",
+    "Ok": "OK",
+    "PagerSearch": "Szukaj",
+    "Select": "Wybierz",
+    "Yes": "Tak"
+  },
+  "AbpUiMultiTenancy": {
+    "GivenTenantIsNotAvailable": "Podany najemca jest niedostępny.",
+    "Name": "Imię",
+    "NotSelected": "Nie wybrano",
+    "Switch": "Zmień",
+    "SwitchTenantHint": "Wybierz najemcę, aby przełączyć.",
+    "Tenant": "Najemca"
+  },
+  "App": {
+    "NetworkErrorMessage": "Sprawdź połączenie i spróbuj ponownie.",
+    "NetworkErrorTitle": "Brak połączenia z internetem"
+  },
+  "Theme": {
+    "ColorMode": "Motyw",
+    "Dark": "Ciemny",
+    "Light": "Jasny",
+    "System": "System"
+  },
+  "MyProjectName": {
+    "Menu:Home": "Home",
+    "Welcome": "Witaj",
+    "LongWelcomeMessage": "Witaj w aplikacji. To jest inicjalny projekt bazujący na ABP framework. Po więcej informacji odwiedź stronę abp.io."
+  }
+}

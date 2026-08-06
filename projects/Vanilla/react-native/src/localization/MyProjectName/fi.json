@@ -1,0 +1,91 @@
+{
+  "AbpAccount": {
+    "500Message": "Palvelinvirhe",
+    "Cancel": "Peruuta",
+    "ChangePassword": "Vaihda salasana",
+    "DefaultErrorMessage": "Tapahtui odottamaton virhe.",
+    "DefaultErrorMessage401": "Ei oikeuksia",
+    "DefaultErrorMessage401Detail": "Sinulla ei ole oikeuksia suorittaa tätä toimintoa.",
+    "DefaultErrorMessage403": "Kielletty",
+    "DefaultErrorMessage403Detail": "Sinulla ei ole lupaa suorittaa tätä toimintoa.",
+    "DefaultErrorMessage404": "Ei löytynyt",
+    "DefaultErrorMessage404Detail": "Pyydettyä resurssia ei löytynyt.",
+    "DisplayName:CurrentPassword": "Nykyinen salasana",
+    "DisplayName:NewPassword": "Uusi salasana",
+    "InternalServerErrorMessage": "Sisäinen palvelinvirhe.",
+    "Login": "Kirjaudu sisään",
+    "Logout": "Kirjaudu ulos",
+    "MyAccount": "Oma tili",
+    "Password": "Salasana",
+    "RememberMe": "Muista minut",
+    "Save": "Tallenna",
+    "UserNameOrEmailAddress": "Käyttäjänimi tai sähköposti",
+    "ThisFieldIsRequired": "Tämä kenttä on pakollinen."
+  },
+  "AbpIdentity": {
+    "Delete": "Poista",
+    "DisplayName:CurrentPassword": "Nykyinen salasana",
+    "DisplayName:LockoutEnabled": "Lukitus käytössä",
+    "DisplayName:Name": "Nimi",
+    "DisplayName:NewPassword": "Uusi salasana",
+    "DisplayName:Surname": "Sukunimi",
+    "EmailAddress": "Sähköpostiosoite",
+    "Name": "Nimi",
+    "Password": "Salasana",
+    "PhoneNumber": "Puhelinnumero",
+    "Roles": "Roolit",
+    "Save": "Tallenna",
+    "Surname": "Sukunimi",
+    "UserDeletionConfirmationMessage": "Haluatko varmasti poistaa käyttäjän {{0}}?",
+    "UserInformations": "Käyttäjätiedot",
+    "UserName": "Käyttäjänimi",
+    "Users": "Käyttäjät"
+  },
+  "AbpSettingManagement": {
+    "Settings": "Asetukset"
+  },
+  "AbpTenantManagement": {
+    "DisplayName:AdminEmailAddress": "Ylläpitäjän sähköposti",
+    "DisplayName:AdminPassword": "Ylläpitäjän salasana",
+    "TenantDeletionConfirmationMessage": "Haluatko varmasti poistaa vuokralaisen {{0}}?",
+    "TenantName": "Vuokralaisen nimi",
+    "Tenants": "Vuokralaiset"
+  },
+  "AbpUi": {
+    "AreYouSure": "Oletko varma?",
+    "Cancel": "Peruuta",
+    "ChangePassword": "Vaihda salasana",
+    "Delete": "Poista",
+    "Edit": "Muokkaa",
+    "Error": "Virhe",
+    "Language": "Kieli",
+    "LoadMore": "Lataa lisää",
+    "Ok": "OK",
+    "PagerSearch": "Hae",
+    "Select": "Valitse",
+    "Yes": "Kyllä"
+  },
+  "AbpUiMultiTenancy": {
+    "GivenTenantIsNotAvailable": "Annettu vuokralainen ei ole saatavilla.",
+    "Name": "Nimi",
+    "NotSelected": "Ei valittu",
+    "Switch": "Vaihda",
+    "SwitchTenantHint": "Valitse vuokralainen vaihtaaksesi.",
+    "Tenant": "Vuokralainen"
+  },
+  "App": {
+    "NetworkErrorMessage": "Tarkista yhteytesi ja yritä uudelleen.",
+    "NetworkErrorTitle": "Ei internetyhteyttä"
+  },
+  "Theme": {
+    "ColorMode": "Teema",
+    "Dark": "Tumma",
+    "Light": "Vaalea",
+    "System": "Järjestelmä"
+  },
+  "MyProjectName": {
+    "Menu:Home": "Home",
+    "Welcome": "Tervetuloa",
+    "LongWelcomeMessage": "Tervetuloa sovellukseen. Tämä on ABP-kehykseen perustuva käynnistysprojekti. Lisätietoja on osoitteessa abp.io."
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "AbpAccount": {
+    "500Message": "Szerverhiba",
+    "Cancel": "Mégse",
+    "ChangePassword": "Jelszó módosítása",
+    "DefaultErrorMessage": "Váratlan hiba történt.",
+    "DefaultErrorMessage401": "Nincs jogosultság",
+    "DefaultErrorMessage401Detail": "Nincs jogosultsága a művelet végrehajtásához.",
+    "DefaultErrorMessage403": "Tiltott",
+    "DefaultErrorMessage403Detail": "Nincs engedélye a művelet végrehajtásához.",
+    "DefaultErrorMessage404": "Nem található",
+    "DefaultErrorMessage404Detail": "A kért erőforrás nem található.",
+    "DisplayName:CurrentPassword": "Jelenlegi jelszó",
+    "DisplayName:NewPassword": "Új jelszó",
+    "InternalServerErrorMessage": "Belső szerverhiba történt.",
+    "Login": "Bejelentkezés",
+    "Logout": "Kijelentkezés",
+    "MyAccount": "Saját fiók",
+    "Password": "Jelszó",
+    "RememberMe": "Emlékezz rám",
+    "Save": "Mentés",
+    "UserNameOrEmailAddress": "Felhasználónév vagy e-mail cím",
+    "ThisFieldIsRequired": "Ez a mező kötelező."
+  },
+  "AbpIdentity": {
+    "Delete": "Törlés",
+    "DisplayName:CurrentPassword": "Jelenlegi jelszó",
+    "DisplayName:LockoutEnabled": "Zárolás engedélyezve",
+    "DisplayName:Name": "Név",
+    "DisplayName:NewPassword": "Új jelszó",
+    "DisplayName:Surname": "Vezetéknév",
+    "EmailAddress": "E-mail cím",
+    "Name": "Név",
+    "Password": "Jelszó",
+    "PhoneNumber": "Telefonszám",
+    "Roles": "Szerepkörök",
+    "Save": "Mentés",
+    "Surname": "Vezetéknév",
+    "UserDeletionConfirmationMessage": "Biztosan törli a felhasználót: {{0}}?",
+    "UserInformations": "Felhasználói adatok",
+    "UserName": "Felhasználónév",
+    "Users": "Felhasználók"
+  },
+  "AbpSettingManagement": {
+    "Settings": "Beállítások"
+  },
+  "AbpTenantManagement": {
+    "DisplayName:AdminEmailAddress": "Admin e-mail cím",
+    "DisplayName:AdminPassword": "Admin jelszó",
+    "TenantDeletionConfirmationMessage": "Biztosan törli a bérlőt: {{0}}?",
+    "TenantName": "Bérlő neve",
+    "Tenants": "Bérlők"
+  },
+  "AbpUi": {
+    "AreYouSure": "Biztos benne?",
+    "Cancel": "Mégse",
+    "ChangePassword": "Jelszó módosítása",
+    "Delete": "Törlés",
+    "Edit": "Szerkesztés",
+    "Error": "Hiba",
+    "Language": "Nyelv",
+    "LoadMore": "További betöltése",
+    "Ok": "OK",
+    "PagerSearch": "Keresés",
+    "Select": "Kiválasztás",
+    "Yes": "Igen"
+  },
+  "AbpUiMultiTenancy": {
+    "GivenTenantIsNotAvailable": "A megadott bérlő nem elérhető.",
+    "Name": "Név",
+    "NotSelected": "Nincs kiválasztva",
+    "Switch": "Váltás",
+    "SwitchTenantHint": "Válasszon bérlőt a váltáshoz.",
+    "Tenant": "Bérlő"
+  },
+  "App": {
+    "NetworkErrorMessage": "Ellenőrizze a kapcsolatot, és próbálja újra.",
+    "NetworkErrorTitle": "Nincs internetkapcsolat"
+  },
+  "Theme": {
+    "ColorMode": "Téma",
+    "Dark": "Sötét",
+    "Light": "Világos",
+    "System": "Rendszer"
+  },
+  "MyProjectName": {
+    "Menu:Home": "Home",
+    "Welcome": "Üdvözlöm",
+    "LongWelcomeMessage": "Üdvözöljük az alkalmazásban. Ez egy ABP keretrendszeren alapuló startup projekt. További információkért látogasson el az abp.io oldalra."
+  }
+}

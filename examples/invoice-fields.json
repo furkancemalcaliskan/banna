@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Number",
+    "type": "string",
+    "required": true,
+    "max_length": 64,
+    "filterable": true,
+    "show_in_ui": true
+  },
+  {
+    "name": "IssuedAt",
+    "type": "DateTime",
+    "required": true,
+    "filterable": true,
+    "show_in_ui": true
+  }
+]

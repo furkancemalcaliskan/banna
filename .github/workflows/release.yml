@@ -1,0 +1,114 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+permissions:
+  contents: read
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  verify:
+    name: Verify release commit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@1.97.1
+      - name: Verify tag, package version, and changelog
+        run: sh scripts/release-policy.sh "$GITHUB_REF_NAME"
+      - name: Run repository quality gate
+        run: sh scripts/check.sh
+      - name: Verify embedded brand assets
+        run: sha256sum --check assets/brand/SHA256SUMS
+      - name: Check dependency policy
+        uses: EmbarkStudios/cargo-deny-action@v2
+
+  build:
+    name: Build ${{ matrix.target }}
+    needs: verify
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            target: x86_64-unknown-linux-gnu
+            extension: ""
+          - os: macos-14
+            target: aarch64-apple-darwin
+            extension: ""
+          - os: windows-latest
+            target: x86_64-pc-windows-msvc
+            extension: .exe
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@1.97.1
+        with:
+          targets: ${{ matrix.target }}
+      - name: Build release binaries
+        run: cargo build --release --locked --bins --target ${{ matrix.target }}
+      - name: Package Unix binaries
+        if: runner.os != 'Windows'
+        shell: bash
+        run: |
+          bundle="banna-${GITHUB_REF_NAME}-${{ matrix.target }}"
+          mkdir -p "dist/${bundle}/LICENSES"
+          cp "target/${{ matrix.target }}/release/banna" "dist/${bundle}/"
+          cp "target/${{ matrix.target }}/release/banna-cli" "dist/${bundle}/"
+          cp README.md LICENSE THIRD_PARTY_NOTICES.md "dist/${bundle}/"
+          cp LICENSES/*.txt "dist/${bundle}/LICENSES/"
+          tar -czf "dist/${bundle}.tar.gz" -C dist "${bundle}"
+          openssl dgst -sha256 -r "dist/${bundle}.tar.gz" | awk -v name="${bundle}.tar.gz" '{ print $1 "  " name }' > "dist/${bundle}.tar.gz.sha256"
+      - name: Package Windows binaries
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $bundle = "banna-$env:GITHUB_REF_NAME-${{ matrix.target }}"
+          New-Item -ItemType Directory -Force -Path "dist/$bundle/LICENSES"
+          Copy-Item "target/${{ matrix.target }}/release/banna${{ matrix.extension }}" "dist/$bundle/"
+          Copy-Item "target/${{ matrix.target }}/release/banna-cli${{ matrix.extension }}" "dist/$bundle/"
+          Copy-Item README.md, LICENSE, THIRD_PARTY_NOTICES.md "dist/$bundle/"
+          Copy-Item "LICENSES/*.txt" "dist/$bundle/LICENSES/"
+          Compress-Archive -Path "dist/$bundle" -DestinationPath "dist/$bundle.zip"
+          $hash = (Get-FileHash "dist/$bundle.zip" -Algorithm SHA256).Hash.ToLower()
+          "$hash  $bundle.zip" | Set-Content -NoNewline "dist/$bundle.zip.sha256"
+      - name: Upload release archive
+        uses: actions/upload-artifact@v7
+        with:
+          name: ${{ matrix.target }}
+          path: |
+            dist/*.tar.gz
+            dist/*.zip
+            dist/*.sha256
+          if-no-files-found: error
+
+  publish:
+    name: Publish GitHub release
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+      - name: Download release archives
+        uses: actions/download-artifact@v8
+        with:
+          path: artifacts
+          merge-multiple: true
+      - name: Create release and upload archives
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" artifacts/* --verify-tag --generate-notes --title "Banna $GITHUB_REF_NAME"

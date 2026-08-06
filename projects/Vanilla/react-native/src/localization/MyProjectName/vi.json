@@ -1,0 +1,91 @@
+{
+  "AbpAccount": {
+    "500Message": "Lỗi máy chủ",
+    "Cancel": "Hủy",
+    "ChangePassword": "Đổi mật khẩu",
+    "DefaultErrorMessage": "Đã xảy ra lỗi không mong đợi.",
+    "DefaultErrorMessage401": "Không được ủy quyền",
+    "DefaultErrorMessage401Detail": "Bạn không được phép thực hiện thao tác này.",
+    "DefaultErrorMessage403": "Bị cấm",
+    "DefaultErrorMessage403Detail": "Bạn không có quyền thực hiện thao tác này.",
+    "DefaultErrorMessage404": "Không tìm thấy",
+    "DefaultErrorMessage404Detail": "Không tìm thấy tài nguyên yêu cầu.",
+    "DisplayName:CurrentPassword": "Mật khẩu hiện tại",
+    "DisplayName:NewPassword": "Mật khẩu mới",
+    "InternalServerErrorMessage": "Đã xảy ra lỗi máy chủ nội bộ.",
+    "Login": "Đăng nhập",
+    "Logout": "Đăng xuất",
+    "MyAccount": "Tài khoản của tôi",
+    "Password": "Mật khẩu",
+    "RememberMe": "Ghi nhớ tôi",
+    "Save": "Lưu",
+    "UserNameOrEmailAddress": "Tên người dùng hoặc email",
+    "ThisFieldIsRequired": "Trường này là bắt buộc."
+  },
+  "AbpIdentity": {
+    "Delete": "Xóa",
+    "DisplayName:CurrentPassword": "Mật khẩu hiện tại",
+    "DisplayName:LockoutEnabled": "Khóa tài khoản",
+    "DisplayName:Name": "Tên",
+    "DisplayName:NewPassword": "Mật khẩu mới",
+    "DisplayName:Surname": "Họ",
+    "EmailAddress": "Địa chỉ email",
+    "Name": "Tên",
+    "Password": "Mật khẩu",
+    "PhoneNumber": "Số điện thoại",
+    "Roles": "Vai trò",
+    "Save": "Lưu",
+    "Surname": "Họ",
+    "UserDeletionConfirmationMessage": "Bạn có chắc chắn muốn xóa người dùng {{0}} không?",
+    "UserInformations": "Thông tin người dùng",
+    "UserName": "Tên người dùng",
+    "Users": "Người dùng"
+  },
+  "AbpSettingManagement": {
+    "Settings": "Cài đặt"
+  },
+  "AbpTenantManagement": {
+    "DisplayName:AdminEmailAddress": "Email quản trị viên",
+    "DisplayName:AdminPassword": "Mật khẩu quản trị viên",
+    "TenantDeletionConfirmationMessage": "Bạn có chắc chắn muốn xóa tenant {{0}} không?",
+    "TenantName": "Tên tenant",
+    "Tenants": "Tenants"
+  },
+  "AbpUi": {
+    "AreYouSure": "Bạn có chắc chắn không?",
+    "Cancel": "Hủy",
+    "ChangePassword": "Đổi mật khẩu",
+    "Delete": "Xóa",
+    "Edit": "Chỉnh sửa",
+    "Error": "Lỗi",
+    "Language": "Ngôn ngữ",
+    "LoadMore": "Tải thêm",
+    "Ok": "OK",
+    "PagerSearch": "Tìm kiếm",
+    "Select": "Chọn",
+    "Yes": "Có"
+  },
+  "AbpUiMultiTenancy": {
+    "GivenTenantIsNotAvailable": "Tenant được cung cấp không khả dụng.",
+    "Name": "Tên",
+    "NotSelected": "Chưa chọn",
+    "Switch": "Chuyển",
+    "SwitchTenantHint": "Chọn một tenant để chuyển.",
+    "Tenant": "Tenant"
+  },
+  "App": {
+    "NetworkErrorMessage": "Vui lòng kiểm tra kết nối và thử lại.",
+    "NetworkErrorTitle": "Không có kết nối Internet"
+  },
+  "Theme": {
+    "ColorMode": "Chủ đề",
+    "Dark": "Tối",
+    "Light": "Sáng",
+    "System": "Hệ thống"
+  },
+  "MyProjectName": {
+    "Menu:Home": "Home",
+    "Welcome": "Chào mừng bạn",
+    "LongWelcomeMessage": "Chào mừng bạn đến ứng dụng. Đây là một dự án khởi nghiệp dựa trên khung ABP. Để biết thêm thông tin, hãy truy cập abp.io."
+  }
+}

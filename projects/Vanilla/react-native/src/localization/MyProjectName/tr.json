@@ -1,0 +1,91 @@
+{
+  "AbpAccount": {
+    "500Message": "Sunucu hatası",
+    "Cancel": "İptal",
+    "ChangePassword": "Şifre değiştir",
+    "DefaultErrorMessage": "Beklenmeyen bir hata oluştu.",
+    "DefaultErrorMessage401": "Yetkisiz",
+    "DefaultErrorMessage401Detail": "Bu işlemi gerçekleştirmek için yetkiniz yok.",
+    "DefaultErrorMessage403": "Yasak",
+    "DefaultErrorMessage403Detail": "Bu işlemi yapmak için izniniz yok.",
+    "DefaultErrorMessage404": "Bulunamadı",
+    "DefaultErrorMessage404Detail": "İstenen kaynak bulunamadı.",
+    "DisplayName:CurrentPassword": "Mevcut şifre",
+    "DisplayName:NewPassword": "Yeni şifre",
+    "InternalServerErrorMessage": "Dahili sunucu hatası oluştu.",
+    "Login": "Giriş yap",
+    "Logout": "Çıkış yap",
+    "MyAccount": "Hesabım",
+    "Password": "Şifre",
+    "RememberMe": "Beni hatırla",
+    "Save": "Kaydet",
+    "UserNameOrEmailAddress": "Kullanıcı adı veya e-posta adresi",
+    "ThisFieldIsRequired": "Bu alan zorunludur."
+  },
+  "AbpIdentity": {
+    "Delete": "Sil",
+    "DisplayName:CurrentPassword": "Mevcut şifre",
+    "DisplayName:LockoutEnabled": "Kilitleme etkin",
+    "DisplayName:Name": "Ad",
+    "DisplayName:NewPassword": "Yeni şifre",
+    "DisplayName:Surname": "Soyad",
+    "EmailAddress": "E-posta adresi",
+    "Name": "Ad",
+    "Password": "Şifre",
+    "PhoneNumber": "Telefon numarası",
+    "Roles": "Roller",
+    "Save": "Kaydet",
+    "Surname": "Soyad",
+    "UserDeletionConfirmationMessage": "{{0}} kullanıcısını silmek istediğinize emin misiniz?",
+    "UserInformations": "Kullanıcı bilgileri",
+    "UserName": "Kullanıcı adı",
+    "Users": "Kullanıcılar"
+  },
+  "AbpSettingManagement": {
+    "Settings": "Ayarlar"
+  },
+  "AbpTenantManagement": {
+    "DisplayName:AdminEmailAddress": "Yönetici e-posta adresi",
+    "DisplayName:AdminPassword": "Yönetici şifresi",
+    "TenantDeletionConfirmationMessage": "{{0}} tenantını silmek istediğinize emin misiniz?",
+    "TenantName": "Tenant adı",
+    "Tenants": "Tenantlar"
+  },
+  "AbpUi": {
+    "AreYouSure": "Emin misiniz?",
+    "Cancel": "İptal",
+    "ChangePassword": "Şifre değiştir",
+    "Delete": "Sil",
+    "Edit": "Düzenle",
+    "Error": "Hata",
+    "Language": "Dil",
+    "LoadMore": "Daha fazla yükle",
+    "Ok": "Tamam",
+    "PagerSearch": "Ara",
+    "Select": "Seç",
+    "Yes": "Evet"
+  },
+  "AbpUiMultiTenancy": {
+    "GivenTenantIsNotAvailable": "Verilen tenant kullanılabilir değil.",
+    "Name": "Ad",
+    "NotSelected": "Seçilmedi",
+    "Switch": "Değiştir",
+    "SwitchTenantHint": "Değiştirmek için bir tenant seçin.",
+    "Tenant": "Tenant"
+  },
+  "App": {
+    "NetworkErrorMessage": "Bağlantınızı kontrol edip tekrar deneyin.",
+    "NetworkErrorTitle": "İnternet bağlantısı yok"
+  },
+  "Theme": {
+    "ColorMode": "Tema",
+    "Dark": "Koyu",
+    "Light": "Açık",
+    "System": "Sistem"
+  },
+  "MyProjectName": {
+    "Menu:Home": "Ana Sayfa",
+    "Welcome": "Hoşgeldiniz",
+    "LongWelcomeMessage": "Uygulamaya hoşgeldiniz. Bu, ABP framework'ü üzerine bina edilmiş bir başlangıç projesidir. Daha fazla bilgi için abp.io adresini ziyaret edebilirsiniz."
+  }
+}

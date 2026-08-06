@@ -1,0 +1,91 @@
+{
+  "AbpAccount": {
+    "500Message": "Netþjónsvilla",
+    "Cancel": "Hætta við",
+    "ChangePassword": "Breyta lykilorði",
+    "DefaultErrorMessage": "Óvænt villa kom upp.",
+    "DefaultErrorMessage401": "Óheimilt",
+    "DefaultErrorMessage401Detail": "Þú hefur ekki heimild til að framkvæma þessa aðgerð.",
+    "DefaultErrorMessage403": "Bannað",
+    "DefaultErrorMessage403Detail": "Þú hefur ekki leyfi til að framkvæma þessa aðgerð.",
+    "DefaultErrorMessage404": "Fannst ekki",
+    "DefaultErrorMessage404Detail": "Beðið úrræði fannst ekki.",
+    "DisplayName:CurrentPassword": "Núverandi lykilorð",
+    "DisplayName:NewPassword": "Nýtt lykilorð",
+    "InternalServerErrorMessage": "Innri netþjónsvilla kom upp.",
+    "Login": "Skrá inn",
+    "Logout": "Skrá út",
+    "MyAccount": "Minn reikningur",
+    "Password": "Lykilorð",
+    "RememberMe": "Muna mig",
+    "Save": "Vista",
+    "UserNameOrEmailAddress": "Notandanafn eða netfang",
+    "ThisFieldIsRequired": "Þessi reitur er nauðsynlegur."
+  },
+  "AbpIdentity": {
+    "Delete": "Eyða",
+    "DisplayName:CurrentPassword": "Núverandi lykilorð",
+    "DisplayName:LockoutEnabled": "Læsing virk",
+    "DisplayName:Name": "Nafn",
+    "DisplayName:NewPassword": "Nýtt lykilorð",
+    "DisplayName:Surname": "Eftirnafn",
+    "EmailAddress": "Netfang",
+    "Name": "Nafn",
+    "Password": "Lykilorð",
+    "PhoneNumber": "Símanúmer",
+    "Roles": "Hlutverk",
+    "Save": "Vista",
+    "Surname": "Eftirnafn",
+    "UserDeletionConfirmationMessage": "Ertu viss um að þú viljir eyða notanda {{0}}?",
+    "UserInformations": "Notandaupplýsingar",
+    "UserName": "Notandanafn",
+    "Users": "Notendur"
+  },
+  "AbpSettingManagement": {
+    "Settings": "Stillingar"
+  },
+  "AbpTenantManagement": {
+    "DisplayName:AdminEmailAddress": "Netfang stjórnanda",
+    "DisplayName:AdminPassword": "Lykilorð stjórnanda",
+    "TenantDeletionConfirmationMessage": "Ertu viss um að þú viljir eyða leigjanda {{0}}?",
+    "TenantName": "Nafn leigjanda",
+    "Tenants": "Leigjendur"
+  },
+  "AbpUi": {
+    "AreYouSure": "Ertu viss?",
+    "Cancel": "Hætta við",
+    "ChangePassword": "Breyta lykilorði",
+    "Delete": "Eyða",
+    "Edit": "Breyta",
+    "Error": "Villa",
+    "Language": "Tungumál",
+    "LoadMore": "Hlaða meira",
+    "Ok": "Í lagi",
+    "PagerSearch": "Leita",
+    "Select": "Velja",
+    "Yes": "Já"
+  },
+  "AbpUiMultiTenancy": {
+    "GivenTenantIsNotAvailable": "Tiltekinn leigjandi er ekki tiltækur.",
+    "Name": "Nafn",
+    "NotSelected": "Ekki valið",
+    "Switch": "Skipta",
+    "SwitchTenantHint": "Veldu leigjanda til að skipta.",
+    "Tenant": "Leigjandi"
+  },
+  "App": {
+    "NetworkErrorMessage": "Athugaðu tengingu og reyndu aftur.",
+    "NetworkErrorTitle": "Engin nettenging"
+  },
+  "Theme": {
+    "ColorMode": "Þema",
+    "Dark": "Dökkt",
+    "Light": "Ljóst",
+    "System": "Kerfi"
+  },
+  "MyProjectName": {
+    "Menu:Home": "Home",
+    "Welcome": "Velkomin",
+    "LongWelcomeMessage": "Verið velkomin í forritið. Þetta er startup verkefni sem byggir á ABP. Nánari upplýsingar er að finna á abp.io."
+  }
+}

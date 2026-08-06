@@ -1,0 +1,91 @@
+{
+  "AbpAccount": {
+    "500Message": "خطأ في الخادم",
+    "Cancel": "إلغاء",
+    "ChangePassword": "تغيير كلمة المرور",
+    "DefaultErrorMessage": "حدث خطأ غير متوقع.",
+    "DefaultErrorMessage401": "غير مصرح",
+    "DefaultErrorMessage401Detail": "غير مصرح لك بتنفيذ هذه العملية.",
+    "DefaultErrorMessage403": "ممنوع",
+    "DefaultErrorMessage403Detail": "ليس لديك إذن لتنفيذ هذه العملية.",
+    "DefaultErrorMessage404": "غير موجود",
+    "DefaultErrorMessage404Detail": "لم يتم العثور على المورد المطلوب.",
+    "DisplayName:CurrentPassword": "كلمة المرور الحالية",
+    "DisplayName:NewPassword": "كلمة المرور الجديدة",
+    "InternalServerErrorMessage": "حدث خطأ داخلي في الخادم.",
+    "Login": "تسجيل الدخول",
+    "Logout": "تسجيل الخروج",
+    "MyAccount": "حسابي",
+    "Password": "كلمة المرور",
+    "RememberMe": "تذكرني",
+    "Save": "حفظ",
+    "UserNameOrEmailAddress": "اسم المستخدم أو البريد الإلكتروني",
+    "ThisFieldIsRequired": "هذه الخانة مطلوبة."
+  },
+  "AbpIdentity": {
+    "Delete": "حذف",
+    "DisplayName:CurrentPassword": "كلمة المرور الحالية",
+    "DisplayName:LockoutEnabled": "تفعيل قفل الحساب",
+    "DisplayName:Name": "الاسم",
+    "DisplayName:NewPassword": "كلمة المرور الجديدة",
+    "DisplayName:Surname": "اسم العائلة",
+    "EmailAddress": "عنوان البريد الإلكتروني",
+    "Name": "الاسم",
+    "Password": "كلمة المرور",
+    "PhoneNumber": "رقم الهاتف",
+    "Roles": "الأدوار",
+    "Save": "حفظ",
+    "Surname": "اسم العائلة",
+    "UserDeletionConfirmationMessage": "هل أنت متأكد أنك تريد حذف المستخدم {{0}}؟",
+    "UserInformations": "معلومات المستخدم",
+    "UserName": "اسم المستخدم",
+    "Users": "المستخدمون"
+  },
+  "AbpSettingManagement": {
+    "Settings": "الإعدادات"
+  },
+  "AbpTenantManagement": {
+    "DisplayName:AdminEmailAddress": "عنوان بريد المسؤول",
+    "DisplayName:AdminPassword": "كلمة مرور المسؤول",
+    "TenantDeletionConfirmationMessage": "هل أنت متأكد أنك تريد حذف المستأجر {{0}}؟",
+    "TenantName": "اسم المستأجر",
+    "Tenants": "المستأجرون"
+  },
+  "AbpUi": {
+    "AreYouSure": "هل أنت متأكد؟",
+    "Cancel": "إلغاء",
+    "ChangePassword": "تغيير كلمة المرور",
+    "Delete": "حذف",
+    "Edit": "تعديل",
+    "Error": "خطأ",
+    "Language": "اللغة",
+    "LoadMore": "تحميل المزيد",
+    "Ok": "موافق",
+    "PagerSearch": "بحث",
+    "Select": "اختيار",
+    "Yes": "نعم"
+  },
+  "AbpUiMultiTenancy": {
+    "GivenTenantIsNotAvailable": "المستأجر المحدد غير متاح.",
+    "Name": "الاسم",
+    "NotSelected": "غير محدد",
+    "Switch": "تبديل",
+    "SwitchTenantHint": "اختر مستأجراً للتبديل.",
+    "Tenant": "مستأجر"
+  },
+  "App": {
+    "NetworkErrorMessage": "يرجى التحقق من الاتصال والمحاولة مرة أخرى.",
+    "NetworkErrorTitle": "لا يوجد اتصال بالإنترنت"
+  },
+  "Theme": {
+    "ColorMode": "السمة",
+    "Dark": "داكن",
+    "Light": "فاتح",
+    "System": "النظام"
+  },
+  "MyProjectName": {
+    "Menu:Home": "Home",
+    "Welcome": "مرحباً",
+    "LongWelcomeMessage": "مرحبا بكم في التطبيق. هذا مشروع بدء تشغيل يعتمد على إطار عمل ABP. لمزيد من المعلومات ، يرجى زيارة abp.io."
+  }
+}

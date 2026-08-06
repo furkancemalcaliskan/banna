@@ -1,0 +1,91 @@
+{
+  "AbpAccount": {
+    "500Message": "Napaka strežnika",
+    "Cancel": "Prekliči",
+    "ChangePassword": "Spremeni geslo",
+    "DefaultErrorMessage": "Prišlo je do nepričakovane napake.",
+    "DefaultErrorMessage401": "Neavtorizirano",
+    "DefaultErrorMessage401Detail": "Nimate dovoljenja za izvedbo te operacije.",
+    "DefaultErrorMessage403": "Prepovedano",
+    "DefaultErrorMessage403Detail": "Nimate dovoljenja za izvedbo te operacije.",
+    "DefaultErrorMessage404": "Ni najdeno",
+    "DefaultErrorMessage404Detail": "Zahtevani vir ni bil najden.",
+    "DisplayName:CurrentPassword": "Trenutno geslo",
+    "DisplayName:NewPassword": "Novo geslo",
+    "InternalServerErrorMessage": "Prišlo je do interne napake strežnika.",
+    "Login": "Prijava",
+    "Logout": "Odjava",
+    "MyAccount": "Moj račun",
+    "Password": "Geslo",
+    "RememberMe": "Zapomni si me",
+    "Save": "Shrani",
+    "UserNameOrEmailAddress": "Uporabniško ime ali e-poštni naslov",
+    "ThisFieldIsRequired": "To polje je obvezno."
+  },
+  "AbpIdentity": {
+    "Delete": "Izbriši",
+    "DisplayName:CurrentPassword": "Trenutno geslo",
+    "DisplayName:LockoutEnabled": "Zaklep omogočen",
+    "DisplayName:Name": "Ime",
+    "DisplayName:NewPassword": "Novo geslo",
+    "DisplayName:Surname": "Priimek",
+    "EmailAddress": "E-poštni naslov",
+    "Name": "Ime",
+    "Password": "Geslo",
+    "PhoneNumber": "Telefonska številka",
+    "Roles": "Vloge",
+    "Save": "Shrani",
+    "Surname": "Priimek",
+    "UserDeletionConfirmationMessage": "Ali ste prepričani, da želite izbrisati uporabnika {{0}}?",
+    "UserInformations": "Podatki o uporabniku",
+    "UserName": "Uporabniško ime",
+    "Users": "Uporabniki"
+  },
+  "AbpSettingManagement": {
+    "Settings": "Nastavitve"
+  },
+  "AbpTenantManagement": {
+    "DisplayName:AdminEmailAddress": "E-pošta skrbnika",
+    "DisplayName:AdminPassword": "Geslo skrbnika",
+    "TenantDeletionConfirmationMessage": "Ali ste prepričani, da želite izbrisati najemnika {{0}}?",
+    "TenantName": "Ime najemnika",
+    "Tenants": "Najemniki"
+  },
+  "AbpUi": {
+    "AreYouSure": "Ali ste prepričani?",
+    "Cancel": "Prekliči",
+    "ChangePassword": "Spremeni geslo",
+    "Delete": "Izbriši",
+    "Edit": "Uredi",
+    "Error": "Napaka",
+    "Language": "Jezik",
+    "LoadMore": "Naloži več",
+    "Ok": "V redu",
+    "PagerSearch": "Išči",
+    "Select": "Izberi",
+    "Yes": "Da"
+  },
+  "AbpUiMultiTenancy": {
+    "GivenTenantIsNotAvailable": "Podani najemnik ni na voljo.",
+    "Name": "Ime",
+    "NotSelected": "Ni izbrano",
+    "Switch": "Preklopi",
+    "SwitchTenantHint": "Izberite najemnika za preklop.",
+    "Tenant": "Najemnik"
+  },
+  "App": {
+    "NetworkErrorMessage": "Preverite povezavo in poskusite znova.",
+    "NetworkErrorTitle": "Ni internetne povezave"
+  },
+  "Theme": {
+    "ColorMode": "Tema",
+    "Dark": "Temno",
+    "Light": "Svetlo",
+    "System": "Sistem"
+  },
+  "MyProjectName": {
+    "Menu:Home": "Home",
+    "Welcome": "Dobrodošli",
+    "LongWelcomeMessage": "Dobrodošli v aplikaciji. To je začetni projekt na osnovi okolja ABP. Za več informacij obiščite abp.io."
+  }
+}

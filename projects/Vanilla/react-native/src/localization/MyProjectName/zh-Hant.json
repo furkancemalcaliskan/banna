@@ -1,0 +1,91 @@
+{
+  "AbpAccount": {
+    "500Message": "伺服器錯誤",
+    "Cancel": "取消",
+    "ChangePassword": "變更密碼",
+    "DefaultErrorMessage": "發生了意外錯誤。",
+    "DefaultErrorMessage401": "未授權",
+    "DefaultErrorMessage401Detail": "您無權執行此操作。",
+    "DefaultErrorMessage403": "禁止",
+    "DefaultErrorMessage403Detail": "您沒有權限執行此操作。",
+    "DefaultErrorMessage404": "找不到",
+    "DefaultErrorMessage404Detail": "找不到請求的資源。",
+    "DisplayName:CurrentPassword": "目前密碼",
+    "DisplayName:NewPassword": "新密碼",
+    "InternalServerErrorMessage": "發生了內部伺服器錯誤。",
+    "Login": "登入",
+    "Logout": "登出",
+    "MyAccount": "我的帳戶",
+    "Password": "密碼",
+    "RememberMe": "記住我",
+    "Save": "儲存",
+    "UserNameOrEmailAddress": "使用者名稱或電子郵件",
+    "ThisFieldIsRequired": "此欄位為必填。"
+  },
+  "AbpIdentity": {
+    "Delete": "刪除",
+    "DisplayName:CurrentPassword": "目前密碼",
+    "DisplayName:LockoutEnabled": "啟用鎖定",
+    "DisplayName:Name": "名",
+    "DisplayName:NewPassword": "新密碼",
+    "DisplayName:Surname": "姓",
+    "EmailAddress": "電子郵件地址",
+    "Name": "名",
+    "Password": "密碼",
+    "PhoneNumber": "電話號碼",
+    "Roles": "角色",
+    "Save": "儲存",
+    "Surname": "姓",
+    "UserDeletionConfirmationMessage": "確定要刪除使用者 {{0}} 嗎？",
+    "UserInformations": "使用者資訊",
+    "UserName": "使用者名稱",
+    "Users": "使用者"
+  },
+  "AbpSettingManagement": {
+    "Settings": "設定"
+  },
+  "AbpTenantManagement": {
+    "DisplayName:AdminEmailAddress": "管理員電子郵件",
+    "DisplayName:AdminPassword": "管理員密碼",
+    "TenantDeletionConfirmationMessage": "確定要刪除租戶 {{0}} 嗎？",
+    "TenantName": "租戶名稱",
+    "Tenants": "租戶"
+  },
+  "AbpUi": {
+    "AreYouSure": "確定嗎？",
+    "Cancel": "取消",
+    "ChangePassword": "變更密碼",
+    "Delete": "刪除",
+    "Edit": "編輯",
+    "Error": "錯誤",
+    "Language": "語言",
+    "LoadMore": "載入更多",
+    "Ok": "確定",
+    "PagerSearch": "搜尋",
+    "Select": "選擇",
+    "Yes": "是"
+  },
+  "AbpUiMultiTenancy": {
+    "GivenTenantIsNotAvailable": "指定的租戶不可用。",
+    "Name": "名",
+    "NotSelected": "未選擇",
+    "Switch": "切換",
+    "SwitchTenantHint": "選擇租戶以切換。",
+    "Tenant": "租戶"
+  },
+  "App": {
+    "NetworkErrorMessage": "請檢查連線後再試一次。",
+    "NetworkErrorTitle": "沒有網路連線"
+  },
+  "Theme": {
+    "ColorMode": "主題",
+    "Dark": "深色",
+    "Light": "淺色",
+    "System": "系統"
+  },
+  "MyProjectName": {
+    "Menu:Home": "Home",
+    "Welcome": "歡迎",
+    "LongWelcomeMessage": "歡迎來到此應用程式. 這是一個基於ABP框架的起始專案. 有關更多訊息, 請瀏覽 abp.io."
+  }
+}

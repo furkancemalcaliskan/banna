@@ -1,0 +1,91 @@
+{
+  "AbpAccount": {
+    "500Message": "Error del servidor",
+    "Cancel": "Cancelar",
+    "ChangePassword": "Cambiar contraseña",
+    "DefaultErrorMessage": "Ha ocurrido un error inesperado.",
+    "DefaultErrorMessage401": "No autorizado",
+    "DefaultErrorMessage401Detail": "No está autorizado para realizar esta operación.",
+    "DefaultErrorMessage403": "Prohibido",
+    "DefaultErrorMessage403Detail": "No tiene permiso para realizar esta operación.",
+    "DefaultErrorMessage404": "No encontrado",
+    "DefaultErrorMessage404Detail": "El recurso solicitado no fue encontrado.",
+    "DisplayName:CurrentPassword": "Contraseña actual",
+    "DisplayName:NewPassword": "Nueva contraseña",
+    "InternalServerErrorMessage": "Ocurrió un error interno del servidor.",
+    "Login": "Iniciar sesión",
+    "Logout": "Cerrar sesión",
+    "MyAccount": "Mi cuenta",
+    "Password": "Contraseña",
+    "RememberMe": "Recordarme",
+    "Save": "Guardar",
+    "UserNameOrEmailAddress": "Nombre de usuario o correo electrónico",
+    "ThisFieldIsRequired": "Este campo es obligatorio."
+  },
+  "AbpIdentity": {
+    "Delete": "Eliminar",
+    "DisplayName:CurrentPassword": "Contraseña actual",
+    "DisplayName:LockoutEnabled": "Bloqueo habilitado",
+    "DisplayName:Name": "Nombre",
+    "DisplayName:NewPassword": "Nueva contraseña",
+    "DisplayName:Surname": "Apellido",
+    "EmailAddress": "Dirección de correo electrónico",
+    "Name": "Nombre",
+    "Password": "Contraseña",
+    "PhoneNumber": "Número de teléfono",
+    "Roles": "Roles",
+    "Save": "Guardar",
+    "Surname": "Apellido",
+    "UserDeletionConfirmationMessage": "¿Está seguro de que desea eliminar al usuario {{0}}?",
+    "UserInformations": "Información del usuario",
+    "UserName": "Nombre de usuario",
+    "Users": "Usuarios"
+  },
+  "AbpSettingManagement": {
+    "Settings": "Configuración"
+  },
+  "AbpTenantManagement": {
+    "DisplayName:AdminEmailAddress": "Correo electrónico del administrador",
+    "DisplayName:AdminPassword": "Contraseña del administrador",
+    "TenantDeletionConfirmationMessage": "¿Está seguro de que desea eliminar el inquilino {{0}}?",
+    "TenantName": "Nombre del inquilino",
+    "Tenants": "Inquilinos"
+  },
+  "AbpUi": {
+    "AreYouSure": "¿Está seguro?",
+    "Cancel": "Cancelar",
+    "ChangePassword": "Cambiar contraseña",
+    "Delete": "Eliminar",
+    "Edit": "Editar",
+    "Error": "Error",
+    "Language": "Idioma",
+    "LoadMore": "Cargar más",
+    "Ok": "Aceptar",
+    "PagerSearch": "Buscar",
+    "Select": "Seleccionar",
+    "Yes": "Sí"
+  },
+  "AbpUiMultiTenancy": {
+    "GivenTenantIsNotAvailable": "El inquilino proporcionado no está disponible.",
+    "Name": "Nombre",
+    "NotSelected": "No seleccionado",
+    "Switch": "Cambiar",
+    "SwitchTenantHint": "Seleccione un inquilino para cambiar.",
+    "Tenant": "Inquilino"
+  },
+  "App": {
+    "NetworkErrorMessage": "Compruebe su conexión e inténtelo de nuevo.",
+    "NetworkErrorTitle": "Sin conexión a Internet"
+  },
+  "Theme": {
+    "ColorMode": "Tema",
+    "Dark": "Oscuro",
+    "Light": "Claro",
+    "System": "Sistema"
+  },
+  "MyProjectName": {
+    "Menu:Home": "Home",
+    "Welcome": "Bienvenido",
+    "LongWelcomeMessage": "Bienvenido a la aplicación, este es un proyecto base basado en el framework ABP. Para más información, visita abp.io."
+  }
+}
