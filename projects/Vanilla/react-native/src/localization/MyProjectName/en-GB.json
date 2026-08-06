@@ -1,0 +1,91 @@
+{
+  "AbpAccount": {
+    "500Message": "Server error",
+    "Cancel": "Cancel",
+    "ChangePassword": "Change password",
+    "DefaultErrorMessage": "An unexpected error has occurred.",
+    "DefaultErrorMessage401": "Unauthorized",
+    "DefaultErrorMessage401Detail": "You are not authorized to perform this operation.",
+    "DefaultErrorMessage403": "Forbidden",
+    "DefaultErrorMessage403Detail": "You do not have permission to perform this operation.",
+    "DefaultErrorMessage404": "Not found",
+    "DefaultErrorMessage404Detail": "The requested resource was not found.",
+    "DisplayName:CurrentPassword": "Current password",
+    "DisplayName:NewPassword": "New password",
+    "InternalServerErrorMessage": "An internal server error occurred.",
+    "Login": "Log in",
+    "Logout": "Log out",
+    "MyAccount": "My account",
+    "Password": "Password",
+    "RememberMe": "Remember me",
+    "Save": "Save",
+    "UserNameOrEmailAddress": "Username or email address",
+    "ThisFieldIsRequired": "This field is required."
+  },
+  "AbpIdentity": {
+    "Delete": "Delete",
+    "DisplayName:CurrentPassword": "Current password",
+    "DisplayName:LockoutEnabled": "Lockout enabled",
+    "DisplayName:Name": "Name",
+    "DisplayName:NewPassword": "New password",
+    "DisplayName:Surname": "Surname",
+    "EmailAddress": "Email address",
+    "Name": "Name",
+    "Password": "Password",
+    "PhoneNumber": "Phone number",
+    "Roles": "Roles",
+    "Save": "Save",
+    "Surname": "Surname",
+    "UserDeletionConfirmationMessage": "Are you sure you want to delete user {{0}}?",
+    "UserInformations": "User information",
+    "UserName": "Username",
+    "Users": "Users"
+  },
+  "AbpSettingManagement": {
+    "Settings": "Settings"
+  },
+  "AbpTenantManagement": {
+    "DisplayName:AdminEmailAddress": "Admin email address",
+    "DisplayName:AdminPassword": "Admin password",
+    "TenantDeletionConfirmationMessage": "Are you sure you want to delete tenant {{0}}?",
+    "TenantName": "Tenant name",
+    "Tenants": "Tenants"
+  },
+  "AbpUi": {
+    "AreYouSure": "Are you sure?",
+    "Cancel": "Cancel",
+    "ChangePassword": "Change password",
+    "Delete": "Delete",
+    "Edit": "Edit",
+    "Error": "Error",
+    "Language": "Language",
+    "LoadMore": "Load more",
+    "Ok": "OK",
+    "PagerSearch": "Search",
+    "Select": "Select",
+    "Yes": "Yes"
+  },
+  "AbpUiMultiTenancy": {
+    "GivenTenantIsNotAvailable": "The given tenant is not available.",
+    "Name": "Name",
+    "NotSelected": "Not selected",
+    "Switch": "Switch",
+    "SwitchTenantHint": "Select a tenant to switch.",
+    "Tenant": "Tenant"
+  },
+  "App": {
+    "NetworkErrorMessage": "Please check your connection and try again.",
+    "NetworkErrorTitle": "No internet connection"
+  },
+  "Theme": {
+    "ColorMode": "Theme",
+    "Dark": "Dark",
+    "Light": "Light",
+    "System": "System"
+  },
+  "MyProjectName": {
+    "Menu:Home": "Home",
+    "Welcome": "Welcome",
+    "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io."
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "AbpAccount": {
+    "500Message": "Chyba servera",
+    "Cancel": "Zrušiť",
+    "ChangePassword": "Zmeniť heslo",
+    "DefaultErrorMessage": "Vyskytla sa neočakávaná chyba.",
+    "DefaultErrorMessage401": "Neautorizované",
+    "DefaultErrorMessage401Detail": "Nemáte oprávnenie vykonať túto operáciu.",
+    "DefaultErrorMessage403": "Zakázané",
+    "DefaultErrorMessage403Detail": "Nemáte oprávnenie vykonať túto operáciu.",
+    "DefaultErrorMessage404": "Nenašlo sa",
+    "DefaultErrorMessage404Detail": "Požadovaný zdroj nebol nájdený.",
+    "DisplayName:CurrentPassword": "Aktuálne heslo",
+    "DisplayName:NewPassword": "Nové heslo",
+    "InternalServerErrorMessage": "Nastala interná chyba servera.",
+    "Login": "Prihlásiť sa",
+    "Logout": "Odhlásiť sa",
+    "MyAccount": "Môj účet",
+    "Password": "Heslo",
+    "RememberMe": "Zapamätať si ma",
+    "Save": "Uložiť",
+    "UserNameOrEmailAddress": "Používateľské meno alebo e-mail",
+    "ThisFieldIsRequired": "Toto pole je povinné."
+  },
+  "AbpIdentity": {
+    "Delete": "Vymazať",
+    "DisplayName:CurrentPassword": "Aktuálne heslo",
+    "DisplayName:LockoutEnabled": "Zámok povolený",
+    "DisplayName:Name": "Meno",
+    "DisplayName:NewPassword": "Nové heslo",
+    "DisplayName:Surname": "Priezvisko",
+    "EmailAddress": "E-mailová adresa",
+    "Name": "Meno",
+    "Password": "Heslo",
+    "PhoneNumber": "Telefónne číslo",
+    "Roles": "Role",
+    "Save": "Uložiť",
+    "Surname": "Priezvisko",
+    "UserDeletionConfirmationMessage": "Naozaj chcete vymazať používateľa {{0}}?",
+    "UserInformations": "Informácie o používateľovi",
+    "UserName": "Používateľské meno",
+    "Users": "Používatelia"
+  },
+  "AbpSettingManagement": {
+    "Settings": "Nastavenia"
+  },
+  "AbpTenantManagement": {
+    "DisplayName:AdminEmailAddress": "E-mail administrátora",
+    "DisplayName:AdminPassword": "Heslo administrátora",
+    "TenantDeletionConfirmationMessage": "Naozaj chcete vymazať nájomcu {{0}}?",
+    "TenantName": "Názov nájomcu",
+    "Tenants": "Nájomcovia"
+  },
+  "AbpUi": {
+    "AreYouSure": "Ste si istý?",
+    "Cancel": "Zrušiť",
+    "ChangePassword": "Zmeniť heslo",
+    "Delete": "Vymazať",
+    "Edit": "Upraviť",
+    "Error": "Chyba",
+    "Language": "Jazyk",
+    "LoadMore": "Načítať viac",
+    "Ok": "OK",
+    "PagerSearch": "Hľadať",
+    "Select": "Vybrať",
+    "Yes": "Áno"
+  },
+  "AbpUiMultiTenancy": {
+    "GivenTenantIsNotAvailable": "Zadaný nájomca nie je dostupný.",
+    "Name": "Meno",
+    "NotSelected": "Nevybrané",
+    "Switch": "Prepnúť",
+    "SwitchTenantHint": "Vyberte nájomcu na prepnutie.",
+    "Tenant": "Nájomca"
+  },
+  "App": {
+    "NetworkErrorMessage": "Skontrolujte pripojenie a skúste to znova.",
+    "NetworkErrorTitle": "Žiadne internetové pripojenie"
+  },
+  "Theme": {
+    "ColorMode": "Téma",
+    "Dark": "Tmavá",
+    "Light": "Svetlá",
+    "System": "Systém"
+  },
+  "MyProjectName": {
+    "Menu:Home": "Home",
+    "Welcome": "Vitajte",
+    "LongWelcomeMessage": "Vitajte v aplikácii. Toto je štartovací projekt založený na ABP frameworku. Viac informácií nájdete na stránke abp.io."
+  }
+}

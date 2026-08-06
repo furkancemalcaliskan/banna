@@ -1,0 +1,91 @@
+{
+  "AbpAccount": {
+    "500Message": "Eroare server",
+    "Cancel": "Anulează",
+    "ChangePassword": "Schimbă parola",
+    "DefaultErrorMessage": "A apărut o eroare neașteptată.",
+    "DefaultErrorMessage401": "Neautorizat",
+    "DefaultErrorMessage401Detail": "Nu ești autorizat să efectuezi această operațiune.",
+    "DefaultErrorMessage403": "Interzis",
+    "DefaultErrorMessage403Detail": "Nu ai permisiunea de a efectua această operațiune.",
+    "DefaultErrorMessage404": "Negăsit",
+    "DefaultErrorMessage404Detail": "Resursa solicitată nu a fost găsită.",
+    "DisplayName:CurrentPassword": "Parola curentă",
+    "DisplayName:NewPassword": "Parola nouă",
+    "InternalServerErrorMessage": "A apărut o eroare internă de server.",
+    "Login": "Autentificare",
+    "Logout": "Deconectare",
+    "MyAccount": "Contul meu",
+    "Password": "Parolă",
+    "RememberMe": "Ține-mă minte",
+    "Save": "Salvează",
+    "UserNameOrEmailAddress": "Nume de utilizator sau adresă de e-mail",
+    "ThisFieldIsRequired": "Acest câmp este obligatoriu."
+  },
+  "AbpIdentity": {
+    "Delete": "Șterge",
+    "DisplayName:CurrentPassword": "Parola curentă",
+    "DisplayName:LockoutEnabled": "Blocare activată",
+    "DisplayName:Name": "Prenume",
+    "DisplayName:NewPassword": "Parola nouă",
+    "DisplayName:Surname": "Nume",
+    "EmailAddress": "Adresă de e-mail",
+    "Name": "Prenume",
+    "Password": "Parolă",
+    "PhoneNumber": "Număr de telefon",
+    "Roles": "Roluri",
+    "Save": "Salvează",
+    "Surname": "Nume",
+    "UserDeletionConfirmationMessage": "Sigur doriți să ștergeți utilizatorul {{0}}?",
+    "UserInformations": "Informații utilizator",
+    "UserName": "Nume de utilizator",
+    "Users": "Utilizatori"
+  },
+  "AbpSettingManagement": {
+    "Settings": "Setări"
+  },
+  "AbpTenantManagement": {
+    "DisplayName:AdminEmailAddress": "E-mail administrator",
+    "DisplayName:AdminPassword": "Parolă administrator",
+    "TenantDeletionConfirmationMessage": "Sigur doriți să ștergeți tenantul {{0}}?",
+    "TenantName": "Nume tenant",
+    "Tenants": "Tenants"
+  },
+  "AbpUi": {
+    "AreYouSure": "Sunteți sigur?",
+    "Cancel": "Anulează",
+    "ChangePassword": "Schimbă parola",
+    "Delete": "Șterge",
+    "Edit": "Editează",
+    "Error": "Eroare",
+    "Language": "Limbă",
+    "LoadMore": "Încarcă mai mult",
+    "Ok": "OK",
+    "PagerSearch": "Caută",
+    "Select": "Selectează",
+    "Yes": "Da"
+  },
+  "AbpUiMultiTenancy": {
+    "GivenTenantIsNotAvailable": "Tenantul specificat nu este disponibil.",
+    "Name": "Nume",
+    "NotSelected": "Neselectat",
+    "Switch": "Schimbă",
+    "SwitchTenantHint": "Selectați un tenant pentru a schimba.",
+    "Tenant": "Tenant"
+  },
+  "App": {
+    "NetworkErrorMessage": "Verificați conexiunea și încercați din nou.",
+    "NetworkErrorTitle": "Fără conexiune la internet"
+  },
+  "Theme": {
+    "ColorMode": "Temă",
+    "Dark": "Întunecat",
+    "Light": "Deschis",
+    "System": "Sistem"
+  },
+  "MyProjectName": {
+    "Menu:Home": "Home",
+    "Welcome": "Bun venit",
+    "LongWelcomeMessage": "Bun venit la aplicaţie. Acesta este un proiect de pornire bazat pe framework-ul ABP. Pentru mai multe informaţii, vizitaţi, visit abp.io."
+  }
+}

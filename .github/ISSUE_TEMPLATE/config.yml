@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/furkancemalcaliskan/banna/security/advisories/new
+    about: Report suspected vulnerabilities privately.
+  - name: Support guide
+    url: https://github.com/furkancemalcaliskan/banna/blob/develop/SUPPORT.md
+    about: Read what information to include in support requests.
+

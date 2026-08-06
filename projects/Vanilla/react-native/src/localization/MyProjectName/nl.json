@@ -1,0 +1,91 @@
+{
+  "AbpAccount": {
+    "500Message": "Serverfout",
+    "Cancel": "Annuleren",
+    "ChangePassword": "Wachtwoord wijzigen",
+    "DefaultErrorMessage": "Er is een onverwachte fout opgetreden.",
+    "DefaultErrorMessage401": "Niet gemachtigd",
+    "DefaultErrorMessage401Detail": "U bent niet gemachtigd om deze bewerking uit te voeren.",
+    "DefaultErrorMessage403": "Verboden",
+    "DefaultErrorMessage403Detail": "U heeft geen toestemming om deze bewerking uit te voeren.",
+    "DefaultErrorMessage404": "Niet gevonden",
+    "DefaultErrorMessage404Detail": "De gevraagde bron is niet gevonden.",
+    "DisplayName:CurrentPassword": "Huidig wachtwoord",
+    "DisplayName:NewPassword": "Nieuw wachtwoord",
+    "InternalServerErrorMessage": "Er is een interne serverfout opgetreden.",
+    "Login": "Inloggen",
+    "Logout": "Uitloggen",
+    "MyAccount": "Mijn account",
+    "Password": "Wachtwoord",
+    "RememberMe": "Onthoud mij",
+    "Save": "Opslaan",
+    "UserNameOrEmailAddress": "Gebruikersnaam of e-mailadres",
+    "ThisFieldIsRequired": "Dit veld is verplicht."
+  },
+  "AbpIdentity": {
+    "Delete": "Verwijderen",
+    "DisplayName:CurrentPassword": "Huidig wachtwoord",
+    "DisplayName:LockoutEnabled": "Vergrendeling ingeschakeld",
+    "DisplayName:Name": "Naam",
+    "DisplayName:NewPassword": "Nieuw wachtwoord",
+    "DisplayName:Surname": "Achternaam",
+    "EmailAddress": "E-mailadres",
+    "Name": "Naam",
+    "Password": "Wachtwoord",
+    "PhoneNumber": "Telefoonnummer",
+    "Roles": "Rollen",
+    "Save": "Opslaan",
+    "Surname": "Achternaam",
+    "UserDeletionConfirmationMessage": "Weet u zeker dat u gebruiker {{0}} wilt verwijderen?",
+    "UserInformations": "Gebruikersinformatie",
+    "UserName": "Gebruikersnaam",
+    "Users": "Gebruikers"
+  },
+  "AbpSettingManagement": {
+    "Settings": "Instellingen"
+  },
+  "AbpTenantManagement": {
+    "DisplayName:AdminEmailAddress": "E-mailadres beheerder",
+    "DisplayName:AdminPassword": "Beheerderswachtwoord",
+    "TenantDeletionConfirmationMessage": "Weet u zeker dat u tenant {{0}} wilt verwijderen?",
+    "TenantName": "Tenantnaam",
+    "Tenants": "Tenants"
+  },
+  "AbpUi": {
+    "AreYouSure": "Weet u het zeker?",
+    "Cancel": "Annuleren",
+    "ChangePassword": "Wachtwoord wijzigen",
+    "Delete": "Verwijderen",
+    "Edit": "Bewerken",
+    "Error": "Fout",
+    "Language": "Taal",
+    "LoadMore": "Meer laden",
+    "Ok": "OK",
+    "PagerSearch": "Zoeken",
+    "Select": "Selecteren",
+    "Yes": "Ja"
+  },
+  "AbpUiMultiTenancy": {
+    "GivenTenantIsNotAvailable": "De opgegeven tenant is niet beschikbaar.",
+    "Name": "Naam",
+    "NotSelected": "Niet geselecteerd",
+    "Switch": "Wisselen",
+    "SwitchTenantHint": "Selecteer een tenant om te wisselen.",
+    "Tenant": "Tenant"
+  },
+  "App": {
+    "NetworkErrorMessage": "Controleer uw verbinding en probeer het opnieuw.",
+    "NetworkErrorTitle": "Geen internetverbinding"
+  },
+  "Theme": {
+    "ColorMode": "Thema",
+    "Dark": "Donker",
+    "Light": "Licht",
+    "System": "Systeem"
+  },
+  "MyProjectName": {
+    "Menu:Home": "Home",
+    "Welcome": "Welkom",
+    "LongWelcomeMessage": "Welkom bij de applicatie. Dit is een startup-project gebaseerd op het ABP-framework. Bezoek abp.io voor meer informatie."
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "AbpAccount": {
+    "500Message": "服务器错误",
+    "Cancel": "取消",
+    "ChangePassword": "更改密码",
+    "DefaultErrorMessage": "发生了意外错误。",
+    "DefaultErrorMessage401": "未授权",
+    "DefaultErrorMessage401Detail": "您无权执行此操作。",
+    "DefaultErrorMessage403": "禁止",
+    "DefaultErrorMessage403Detail": "您没有权限执行此操作。",
+    "DefaultErrorMessage404": "未找到",
+    "DefaultErrorMessage404Detail": "未找到请求的资源。",
+    "DisplayName:CurrentPassword": "当前密码",
+    "DisplayName:NewPassword": "新密码",
+    "InternalServerErrorMessage": "发生了内部服务器错误。",
+    "Login": "登录",
+    "Logout": "退出登录",
+    "MyAccount": "我的账户",
+    "Password": "密码",
+    "RememberMe": "记住我",
+    "Save": "保存",
+    "UserNameOrEmailAddress": "用户名或电子邮箱",
+    "ThisFieldIsRequired": "此字段为必填项。"
+  },
+  "AbpIdentity": {
+    "Delete": "删除",
+    "DisplayName:CurrentPassword": "当前密码",
+    "DisplayName:LockoutEnabled": "启用锁定",
+    "DisplayName:Name": "名",
+    "DisplayName:NewPassword": "新密码",
+    "DisplayName:Surname": "姓",
+    "EmailAddress": "电子邮箱地址",
+    "Name": "名",
+    "Password": "密码",
+    "PhoneNumber": "电话号码",
+    "Roles": "角色",
+    "Save": "保存",
+    "Surname": "姓",
+    "UserDeletionConfirmationMessage": "确定要删除用户 {{0}} 吗？",
+    "UserInformations": "用户信息",
+    "UserName": "用户名",
+    "Users": "用户"
+  },
+  "AbpSettingManagement": {
+    "Settings": "设置"
+  },
+  "AbpTenantManagement": {
+    "DisplayName:AdminEmailAddress": "管理员邮箱",
+    "DisplayName:AdminPassword": "管理员密码",
+    "TenantDeletionConfirmationMessage": "确定要删除租户 {{0}} 吗？",
+    "TenantName": "租户名称",
+    "Tenants": "租户"
+  },
+  "AbpUi": {
+    "AreYouSure": "确定吗？",
+    "Cancel": "取消",
+    "ChangePassword": "更改密码",
+    "Delete": "删除",
+    "Edit": "编辑",
+    "Error": "错误",
+    "Language": "语言",
+    "LoadMore": "加载更多",
+    "Ok": "确定",
+    "PagerSearch": "搜索",
+    "Select": "选择",
+    "Yes": "是"
+  },
+  "AbpUiMultiTenancy": {
+    "GivenTenantIsNotAvailable": "指定的租户不可用。",
+    "Name": "名",
+    "NotSelected": "未选择",
+    "Switch": "切换",
+    "SwitchTenantHint": "选择一个租户进行切换。",
+    "Tenant": "租户"
+  },
+  "App": {
+    "NetworkErrorMessage": "请检查网络连接后重试。",
+    "NetworkErrorTitle": "无网络连接"
+  },
+  "Theme": {
+    "ColorMode": "主题",
+    "Dark": "深色",
+    "Light": "浅色",
+    "System": "系统"
+  },
+  "MyProjectName": {
+    "Menu:Home": "Home",
+    "Welcome": "欢迎",
+    "LongWelcomeMessage": "欢迎使用本应用程序。这是一个基于 ABP 框架的启动项目。更多信息，请访问 abp.io。"
+  }
+}

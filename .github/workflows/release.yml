@@ -1,0 +1,197 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+  workflow_dispatch:
+    inputs:
+      release_ref:
+        description: Stable SemVer release ref to validate, for example v0.1.0
+        required: true
+
+concurrency:
+  group: release-${{ inputs.release_ref || github.ref_name }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  verify:
+    name: Verify release commit
+    runs-on: ubuntu-latest
+    env:
+      RELEASE_REF: ${{ inputs.release_ref || github.ref_name }}
+    outputs:
+      release_ref: ${{ steps.release-identity.outputs.value }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@1.97.1
+        with:
+          components: clippy, rustfmt
+      - id: release-identity
+        name: Verify release identity
+        shell: bash
+        run: |
+          sh scripts/release-policy.sh "$RELEASE_REF"
+          if [ "$GITHUB_EVENT_NAME" = "push" ]; then
+            test "$GITHUB_REF_TYPE" = "tag"
+            test "$(git cat-file -t "$GITHUB_REF")" = "tag"
+            test "$(git rev-parse "$GITHUB_REF^{commit}")" = "$(git rev-parse HEAD)"
+          else
+            test "$GITHUB_EVENT_NAME" = "workflow_dispatch"
+            test "$GITHUB_REF" = "refs/heads/main"
+          fi
+          echo "value=$RELEASE_REF" >>"$GITHUB_OUTPUT"
+      - name: Run repository quality gate
+        run: sh scripts/check.sh
+      - name: Verify embedded brand assets
+        run: sha256sum --check assets/brand/SHA256SUMS
+      - name: Check dependency policy
+        uses: EmbarkStudios/cargo-deny-action@v2
+
+  build:
+    name: Build ${{ matrix.target }}
+    needs: verify
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-24.04
+            target: x86_64-unknown-linux-gnu
+            extension: ""
+          - os: ubuntu-24.04-arm
+            target: aarch64-unknown-linux-gnu
+            extension: ""
+          - os: macos-15-intel
+            target: x86_64-apple-darwin
+            extension: ""
+          - os: macos-15
+            target: aarch64-apple-darwin
+            extension: ""
+          - os: windows-2025
+            target: x86_64-pc-windows-msvc
+            extension: .exe
+          - os: windows-11-arm
+            target: aarch64-pc-windows-msvc
+            extension: .exe
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@1.97.1
+        with:
+          targets: ${{ matrix.target }}
+      - name: Build release binaries
+        run: cargo build --release --locked --bins --target ${{ matrix.target }}
+      - name: Smoke-test Unix binaries
+        if: runner.os != 'Windows'
+        shell: bash
+        run: |
+          "target/${{ matrix.target }}/release/banna" --version
+          "target/${{ matrix.target }}/release/banna-cli" --version
+      - name: Smoke-test Windows binaries
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          & "target/${{ matrix.target }}/release/banna.exe" --version
+          & "target/${{ matrix.target }}/release/banna-cli.exe" --version
+      - name: Package Unix binary bundle
+        if: runner.os != 'Windows'
+        shell: bash
+        env:
+          RELEASE_REF: ${{ needs.verify.outputs.release_ref }}
+        run: |
+          bundle="banna-${RELEASE_REF}-${{ matrix.target }}"
+          mkdir -p "dist/${bundle}/LICENSES"
+          cp "target/${{ matrix.target }}/release/banna" "dist/${bundle}/"
+          cp "target/${{ matrix.target }}/release/banna-cli" "dist/${bundle}/"
+          cp README.md LICENSE THIRD_PARTY_NOTICES.md "dist/${bundle}/"
+          cp LICENSES/*.txt "dist/${bundle}/LICENSES/"
+          tar -czf "dist/${bundle}.tar.gz" -C dist "${bundle}"
+          cd dist
+          sha256sum "${bundle}.tar.gz" >"${bundle}.tar.gz.sha256"
+      - name: Package Windows binary bundle
+        if: runner.os == 'Windows'
+        shell: pwsh
+        env:
+          RELEASE_REF: ${{ needs.verify.outputs.release_ref }}
+        run: |
+          $bundle = "banna-$env:RELEASE_REF-${{ matrix.target }}"
+          New-Item -ItemType Directory -Force -Path "dist/$bundle/LICENSES"
+          Copy-Item "target/${{ matrix.target }}/release/banna.exe" "dist/$bundle/"
+          Copy-Item "target/${{ matrix.target }}/release/banna-cli.exe" "dist/$bundle/"
+          Copy-Item README.md, LICENSE, THIRD_PARTY_NOTICES.md "dist/$bundle/"
+          Copy-Item "LICENSES/*.txt" "dist/$bundle/LICENSES/"
+          Compress-Archive -Path "dist/$bundle" -DestinationPath "dist/$bundle.zip"
+          $hash = (Get-FileHash "dist/$bundle.zip" -Algorithm SHA256).Hash.ToLower()
+          "$hash  $bundle.zip" | Set-Content -NoNewline "dist/$bundle.zip.sha256"
+      - name: Upload binary bundle
+        uses: actions/upload-artifact@v7
+        with:
+          name: ${{ matrix.target }}
+          path: |
+            dist/*.tar.gz
+            dist/*.zip
+            dist/*.sha256
+          if-no-files-found: error
+          retention-days: 7
+
+  publish:
+    name: Publish immutable binary release
+    if: github.event_name == 'push'
+    needs:
+      - verify
+      - build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
+      attestations: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      RELEASE_REF: ${{ needs.verify.outputs.release_ref }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+      - name: Download binary bundles
+        uses: actions/download-artifact@v8
+        with:
+          path: artifacts
+          merge-multiple: true
+      - name: Create aggregate checksum manifest
+        shell: bash
+        run: |
+          cd artifacts
+          sha256sum *.tar.gz *.zip >SHA256SUMS
+      - name: Attest binary bundle provenance
+        uses: actions/attest-build-provenance@v3
+        with:
+          subject-path: |
+            artifacts/*.tar.gz
+            artifacts/*.zip
+      - name: Create GitHub release and upload binary assets
+        shell: bash
+        run: |
+          gh release create "$RELEASE_REF" \
+            artifacts/*.tar.gz \
+            artifacts/*.zip \
+            artifacts/*.sha256 \
+            artifacts/SHA256SUMS \
+            --verify-tag \
+            --latest \
+            --title "Banna $RELEASE_REF" \
+            --notes-file "docs/releases/$RELEASE_REF.md"

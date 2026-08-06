@@ -1,0 +1,91 @@
+{
+  "AbpAccount": {
+    "500Message": "Ошибка сервера",
+    "Cancel": "Отмена",
+    "ChangePassword": "Изменить пароль",
+    "DefaultErrorMessage": "Произошла непредвиденная ошибка.",
+    "DefaultErrorMessage401": "Не авторизован",
+    "DefaultErrorMessage401Detail": "У вас нет прав для выполнения этой операции.",
+    "DefaultErrorMessage403": "Запрещено",
+    "DefaultErrorMessage403Detail": "У вас нет прав для выполнения этой операции.",
+    "DefaultErrorMessage404": "Не найдено",
+    "DefaultErrorMessage404Detail": "Запрашиваемый ресурс не найден.",
+    "DisplayName:CurrentPassword": "Текущий пароль",
+    "DisplayName:NewPassword": "Новый пароль",
+    "InternalServerErrorMessage": "Произошла внутренняя ошибка сервера.",
+    "Login": "Войти",
+    "Logout": "Выйти",
+    "MyAccount": "Мой аккаунт",
+    "Password": "Пароль",
+    "RememberMe": "Запомнить меня",
+    "Save": "Сохранить",
+    "UserNameOrEmailAddress": "Имя пользователя или адрес электронной почты",
+    "ThisFieldIsRequired": "Это поле обязательно."
+  },
+  "AbpIdentity": {
+    "Delete": "Удалить",
+    "DisplayName:CurrentPassword": "Текущий пароль",
+    "DisplayName:LockoutEnabled": "Блокировка включена",
+    "DisplayName:Name": "Имя",
+    "DisplayName:NewPassword": "Новый пароль",
+    "DisplayName:Surname": "Фамилия",
+    "EmailAddress": "Адрес электронной почты",
+    "Name": "Имя",
+    "Password": "Пароль",
+    "PhoneNumber": "Номер телефона",
+    "Roles": "Роли",
+    "Save": "Сохранить",
+    "Surname": "Фамилия",
+    "UserDeletionConfirmationMessage": "Вы уверены, что хотите удалить пользователя {{0}}?",
+    "UserInformations": "Информация о пользователе",
+    "UserName": "Имя пользователя",
+    "Users": "Пользователи"
+  },
+  "AbpSettingManagement": {
+    "Settings": "Настройки"
+  },
+  "AbpTenantManagement": {
+    "DisplayName:AdminEmailAddress": "Email администратора",
+    "DisplayName:AdminPassword": "Пароль администратора",
+    "TenantDeletionConfirmationMessage": "Вы уверены, что хотите удалить арендатора {{0}}?",
+    "TenantName": "Имя арендатора",
+    "Tenants": "Арендаторы"
+  },
+  "AbpUi": {
+    "AreYouSure": "Вы уверены?",
+    "Cancel": "Отмена",
+    "ChangePassword": "Изменить пароль",
+    "Delete": "Удалить",
+    "Edit": "Редактировать",
+    "Error": "Ошибка",
+    "Language": "Язык",
+    "LoadMore": "Загрузить еще",
+    "Ok": "ОК",
+    "PagerSearch": "Поиск",
+    "Select": "Выбрать",
+    "Yes": "Да"
+  },
+  "AbpUiMultiTenancy": {
+    "GivenTenantIsNotAvailable": "Указанный арендатор недоступен.",
+    "Name": "Имя",
+    "NotSelected": "Не выбрано",
+    "Switch": "Сменить",
+    "SwitchTenantHint": "Выберите арендатора для переключения.",
+    "Tenant": "Арендатор"
+  },
+  "App": {
+    "NetworkErrorMessage": "Проверьте подключение и попробуйте снова.",
+    "NetworkErrorTitle": "Нет подключения к интернету"
+  },
+  "Theme": {
+    "ColorMode": "Тема",
+    "Dark": "Темная",
+    "Light": "Светлая",
+    "System": "Системная"
+  },
+  "MyProjectName": {
+    "Menu:Home": "Home",
+    "Welcome": "Добро пожаловать",
+    "LongWelcomeMessage": "Добро пожаловать в приложение. Этот запущенный проект основан на фреймворке ABP. Для получения дополнительной информации посетите сайт abp.io."
+  }
+}

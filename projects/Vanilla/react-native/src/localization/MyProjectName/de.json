@@ -1,0 +1,91 @@
+{
+  "AbpAccount": {
+    "500Message": "Serverfehler",
+    "Cancel": "Abbrechen",
+    "ChangePassword": "Passwort ändern",
+    "DefaultErrorMessage": "Ein unerwarteter Fehler ist aufgetreten.",
+    "DefaultErrorMessage401": "Nicht autorisiert",
+    "DefaultErrorMessage401Detail": "Sie sind nicht berechtigt, diesen Vorgang auszuführen.",
+    "DefaultErrorMessage403": "Verboten",
+    "DefaultErrorMessage403Detail": "Sie haben keine Berechtigung, diesen Vorgang auszuführen.",
+    "DefaultErrorMessage404": "Nicht gefunden",
+    "DefaultErrorMessage404Detail": "Die angeforderte Ressource wurde nicht gefunden.",
+    "DisplayName:CurrentPassword": "Aktuelles Passwort",
+    "DisplayName:NewPassword": "Neues Passwort",
+    "InternalServerErrorMessage": "Ein interner Serverfehler ist aufgetreten.",
+    "Login": "Anmelden",
+    "Logout": "Abmelden",
+    "MyAccount": "Mein Konto",
+    "Password": "Passwort",
+    "RememberMe": "Angemeldet bleiben",
+    "Save": "Speichern",
+    "UserNameOrEmailAddress": "Benutzername oder E-Mail-Adresse",
+    "ThisFieldIsRequired": "Dieses Feld ist erforderlich."
+  },
+  "AbpIdentity": {
+    "Delete": "Löschen",
+    "DisplayName:CurrentPassword": "Aktuelles Passwort",
+    "DisplayName:LockoutEnabled": "Sperrung aktiviert",
+    "DisplayName:Name": "Name",
+    "DisplayName:NewPassword": "Neues Passwort",
+    "DisplayName:Surname": "Nachname",
+    "EmailAddress": "E-Mail-Adresse",
+    "Name": "Name",
+    "Password": "Passwort",
+    "PhoneNumber": "Telefonnummer",
+    "Roles": "Rollen",
+    "Save": "Speichern",
+    "Surname": "Nachname",
+    "UserDeletionConfirmationMessage": "Möchten Sie den Benutzer {{0}} wirklich löschen?",
+    "UserInformations": "Benutzerinformationen",
+    "UserName": "Benutzername",
+    "Users": "Benutzer"
+  },
+  "AbpSettingManagement": {
+    "Settings": "Einstellungen"
+  },
+  "AbpTenantManagement": {
+    "DisplayName:AdminEmailAddress": "Administrator-E-Mail-Adresse",
+    "DisplayName:AdminPassword": "Administrator-Passwort",
+    "TenantDeletionConfirmationMessage": "Möchten Sie den Mandanten {{0}} wirklich löschen?",
+    "TenantName": "Mandantenname",
+    "Tenants": "Mandanten"
+  },
+  "AbpUi": {
+    "AreYouSure": "Sind Sie sicher?",
+    "Cancel": "Abbrechen",
+    "ChangePassword": "Passwort ändern",
+    "Delete": "Löschen",
+    "Edit": "Bearbeiten",
+    "Error": "Fehler",
+    "Language": "Sprache",
+    "LoadMore": "Mehr laden",
+    "Ok": "OK",
+    "PagerSearch": "Suchen",
+    "Select": "Auswählen",
+    "Yes": "Ja"
+  },
+  "AbpUiMultiTenancy": {
+    "GivenTenantIsNotAvailable": "Der angegebene Mandant ist nicht verfügbar.",
+    "Name": "Name",
+    "NotSelected": "Nicht ausgewählt",
+    "Switch": "Wechseln",
+    "SwitchTenantHint": "Wählen Sie einen Mandanten zum Wechseln aus.",
+    "Tenant": "Mandant"
+  },
+  "App": {
+    "NetworkErrorMessage": "Bitte überprüfen Sie Ihre Verbindung und versuchen Sie es erneut.",
+    "NetworkErrorTitle": "Keine Internetverbindung"
+  },
+  "Theme": {
+    "ColorMode": "Design",
+    "Dark": "Dunkel",
+    "Light": "Hell",
+    "System": "System"
+  },
+  "MyProjectName": {
+    "Menu:Home": "Home",
+    "Welcome": "Willkommen",
+    "LongWelcomeMessage": "Willkommen bei der Anwendung. Dies ist ein Startup-Projekt, das auf dem ABP-Framework basiert. Weitere Informationen finden Sie unter abp.io."
+  }
+}

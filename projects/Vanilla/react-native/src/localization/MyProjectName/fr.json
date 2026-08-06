@@ -1,0 +1,91 @@
+{
+  "AbpAccount": {
+    "500Message": "Erreur du serveur",
+    "Cancel": "Annuler",
+    "ChangePassword": "Changer le mot de passe",
+    "DefaultErrorMessage": "Une erreur inattendue s'est produite.",
+    "DefaultErrorMessage401": "Non autorisé",
+    "DefaultErrorMessage401Detail": "Vous n'êtes pas autorisé à effectuer cette opération.",
+    "DefaultErrorMessage403": "Interdit",
+    "DefaultErrorMessage403Detail": "Vous n'avez pas la permission d'effectuer cette opération.",
+    "DefaultErrorMessage404": "Introuvable",
+    "DefaultErrorMessage404Detail": "La ressource demandée est introuvable.",
+    "DisplayName:CurrentPassword": "Mot de passe actuel",
+    "DisplayName:NewPassword": "Nouveau mot de passe",
+    "InternalServerErrorMessage": "Une erreur interne du serveur s'est produite.",
+    "Login": "Se connecter",
+    "Logout": "Se déconnecter",
+    "MyAccount": "Mon compte",
+    "Password": "Mot de passe",
+    "RememberMe": "Se souvenir de moi",
+    "Save": "Enregistrer",
+    "UserNameOrEmailAddress": "Nom d'utilisateur ou adresse e-mail",
+    "ThisFieldIsRequired": "Ce champ est obligatoire."
+  },
+  "AbpIdentity": {
+    "Delete": "Supprimer",
+    "DisplayName:CurrentPassword": "Mot de passe actuel",
+    "DisplayName:LockoutEnabled": "Verrouillage activé",
+    "DisplayName:Name": "Prénom",
+    "DisplayName:NewPassword": "Nouveau mot de passe",
+    "DisplayName:Surname": "Nom",
+    "EmailAddress": "Adresse e-mail",
+    "Name": "Prénom",
+    "Password": "Mot de passe",
+    "PhoneNumber": "Numéro de téléphone",
+    "Roles": "Rôles",
+    "Save": "Enregistrer",
+    "Surname": "Nom",
+    "UserDeletionConfirmationMessage": "Êtes-vous sûr de vouloir supprimer l'utilisateur {{0}} ?",
+    "UserInformations": "Informations utilisateur",
+    "UserName": "Nom d'utilisateur",
+    "Users": "Utilisateurs"
+  },
+  "AbpSettingManagement": {
+    "Settings": "Paramètres"
+  },
+  "AbpTenantManagement": {
+    "DisplayName:AdminEmailAddress": "Adresse e-mail de l'administrateur",
+    "DisplayName:AdminPassword": "Mot de passe de l'administrateur",
+    "TenantDeletionConfirmationMessage": "Êtes-vous sûr de vouloir supprimer le locataire {{0}} ?",
+    "TenantName": "Nom du locataire",
+    "Tenants": "Locataires"
+  },
+  "AbpUi": {
+    "AreYouSure": "Êtes-vous sûr ?",
+    "Cancel": "Annuler",
+    "ChangePassword": "Changer le mot de passe",
+    "Delete": "Supprimer",
+    "Edit": "Modifier",
+    "Error": "Erreur",
+    "Language": "Langue",
+    "LoadMore": "Charger plus",
+    "Ok": "OK",
+    "PagerSearch": "Rechercher",
+    "Select": "Sélectionner",
+    "Yes": "Oui"
+  },
+  "AbpUiMultiTenancy": {
+    "GivenTenantIsNotAvailable": "Le locataire fourni n'est pas disponible.",
+    "Name": "Nom",
+    "NotSelected": "Non sélectionné",
+    "Switch": "Changer",
+    "SwitchTenantHint": "Sélectionnez un locataire pour changer.",
+    "Tenant": "Locataire"
+  },
+  "App": {
+    "NetworkErrorMessage": "Veuillez vérifier votre connexion et réessayer.",
+    "NetworkErrorTitle": "Pas de connexion Internet"
+  },
+  "Theme": {
+    "ColorMode": "Thème",
+    "Dark": "Sombre",
+    "Light": "Clair",
+    "System": "Système"
+  },
+  "MyProjectName": {
+    "Menu:Home": "Home",
+    "Welcome": "Bienvenue",
+    "LongWelcomeMessage": "Bienvenue dans l'application. Il s'agit d'un projet de démarrage basé sur le framework ABP. Pour plus d'informations, visitez abp.io."
+  }
+}

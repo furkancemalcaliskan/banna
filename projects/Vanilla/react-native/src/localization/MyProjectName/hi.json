@@ -1,0 +1,91 @@
+{
+  "AbpAccount": {
+    "500Message": "सर्वर त्रुटि",
+    "Cancel": "रद्द करें",
+    "ChangePassword": "पासवर्ड बदलें",
+    "DefaultErrorMessage": "एक अप्रत्याशित त्रुटि हुई है।",
+    "DefaultErrorMessage401": "अनधिकृत",
+    "DefaultErrorMessage401Detail": "आपको यह कार्रवाई करने की अनुमति नहीं है।",
+    "DefaultErrorMessage403": "निषिद्ध",
+    "DefaultErrorMessage403Detail": "आपको यह कार्रवाई करने की अनुमति नहीं है।",
+    "DefaultErrorMessage404": "नहीं मिला",
+    "DefaultErrorMessage404Detail": "मांगा गया संसाधन नहीं मिला।",
+    "DisplayName:CurrentPassword": "वर्तमान पासवर्ड",
+    "DisplayName:NewPassword": "नया पासवर्ड",
+    "InternalServerErrorMessage": "आंतरिक सर्वर त्रुटि हुई।",
+    "Login": "लॉग इन करें",
+    "Logout": "लॉग आउट",
+    "MyAccount": "मेरा खाता",
+    "Password": "पासवर्ड",
+    "RememberMe": "मुझे याद रखें",
+    "Save": "सहेजें",
+    "UserNameOrEmailAddress": "उपयोगकर्ता नाम या ईमेल पता",
+    "ThisFieldIsRequired": "यह फ़ील्ड आवश्यक है।"
+  },
+  "AbpIdentity": {
+    "Delete": "हटाएं",
+    "DisplayName:CurrentPassword": "वर्तमान पासवर्ड",
+    "DisplayName:LockoutEnabled": "लॉकआउट सक्षम",
+    "DisplayName:Name": "नाम",
+    "DisplayName:NewPassword": "नया पासवर्ड",
+    "DisplayName:Surname": "उपनाम",
+    "EmailAddress": "ईमेल पता",
+    "Name": "नाम",
+    "Password": "पासवर्ड",
+    "PhoneNumber": "फोन नंबर",
+    "Roles": "भूमिकाएँ",
+    "Save": "सहेजें",
+    "Surname": "उपनाम",
+    "UserDeletionConfirmationMessage": "क्या आप वाकई उपयोगकर्ता {{0}} को हटाना चाहते हैं?",
+    "UserInformations": "उपयोगकर्ता जानकारी",
+    "UserName": "उपयोगकर्ता नाम",
+    "Users": "उपयोगकर्ता"
+  },
+  "AbpSettingManagement": {
+    "Settings": "सेटिंग्स"
+  },
+  "AbpTenantManagement": {
+    "DisplayName:AdminEmailAddress": "प्रशासक ईमेल पता",
+    "DisplayName:AdminPassword": "प्रशासक पासवर्ड",
+    "TenantDeletionConfirmationMessage": "क्या आप वाकई टेनेंट {{0}} को हटाना चाहते हैं?",
+    "TenantName": "टेनेंट नाम",
+    "Tenants": "टेनेंट्स"
+  },
+  "AbpUi": {
+    "AreYouSure": "क्या आप सुनिश्चित हैं?",
+    "Cancel": "रद्द करें",
+    "ChangePassword": "पासवर्ड बदलें",
+    "Delete": "हटाएं",
+    "Edit": "संपादित करें",
+    "Error": "त्रुटि",
+    "Language": "भाषा",
+    "LoadMore": "और लोड करें",
+    "Ok": "ठीक",
+    "PagerSearch": "खोजें",
+    "Select": "चुनें",
+    "Yes": "हाँ"
+  },
+  "AbpUiMultiTenancy": {
+    "GivenTenantIsNotAvailable": "दिया गया टेनेंट उपलब्ध नहीं है।",
+    "Name": "नाम",
+    "NotSelected": "चयनित नहीं",
+    "Switch": "बदलें",
+    "SwitchTenantHint": "बदलने के लिए टेनेंट चुनें।",
+    "Tenant": "टेनेंट"
+  },
+  "App": {
+    "NetworkErrorMessage": "कृपया अपना कनेक्शन जांचें और फिर से प्रयास करें।",
+    "NetworkErrorTitle": "इंटरनेट कनेक्शन नहीं है"
+  },
+  "Theme": {
+    "ColorMode": "थीम",
+    "Dark": "डार्क",
+    "Light": "लाइट",
+    "System": "सिस्टम"
+  },
+  "MyProjectName": {
+    "Menu:Home": "Home",
+    "Welcome": "स्वागत हे",
+    "LongWelcomeMessage": "आवेदन करने के लिए आपका स्वागत है। यह एबीपी ढांचे पर आधारित एक स्टार्टअप परियोजना है। अधिक जानकारी के लिए, abp.io पर जाएं।"
+  }
+}

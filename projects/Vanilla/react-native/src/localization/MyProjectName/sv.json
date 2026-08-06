@@ -1,0 +1,91 @@
+{
+  "AbpAccount": {
+    "500Message": "Serverfel",
+    "Cancel": "Avbryt",
+    "ChangePassword": "Ändra lösenord",
+    "DefaultErrorMessage": "Ett oväntat fel har uppstått.",
+    "DefaultErrorMessage401": "Ej behörig",
+    "DefaultErrorMessage401Detail": "Du har inte behörighet att utföra denna åtgärd.",
+    "DefaultErrorMessage403": "Förbjuden",
+    "DefaultErrorMessage403Detail": "Du har inte behörighet att utföra denna åtgärd.",
+    "DefaultErrorMessage404": "Hittades inte",
+    "DefaultErrorMessage404Detail": "Den begärda resursen hittades inte.",
+    "DisplayName:CurrentPassword": "Nuvarande lösenord",
+    "DisplayName:NewPassword": "Nytt lösenord",
+    "InternalServerErrorMessage": "Ett internt serverfel inträffade.",
+    "Login": "Logga in",
+    "Logout": "Logga ut",
+    "MyAccount": "Mitt konto",
+    "Password": "Lösenord",
+    "RememberMe": "Kom ihåg mig",
+    "Save": "Spara",
+    "UserNameOrEmailAddress": "Användarnamn eller e-postadress",
+    "ThisFieldIsRequired": "Det här fältet är obligatoriskt."
+  },
+  "AbpIdentity": {
+    "Delete": "Ta bort",
+    "DisplayName:CurrentPassword": "Nuvarande lösenord",
+    "DisplayName:LockoutEnabled": "Låsning aktiverad",
+    "DisplayName:Name": "Förnamn",
+    "DisplayName:NewPassword": "Nytt lösenord",
+    "DisplayName:Surname": "Efternamn",
+    "EmailAddress": "E-postadress",
+    "Name": "Förnamn",
+    "Password": "Lösenord",
+    "PhoneNumber": "Telefonnummer",
+    "Roles": "Roller",
+    "Save": "Spara",
+    "Surname": "Efternamn",
+    "UserDeletionConfirmationMessage": "Är du säker på att du vill ta bort användaren {{0}}?",
+    "UserInformations": "Användarinformation",
+    "UserName": "Användarnamn",
+    "Users": "Användare"
+  },
+  "AbpSettingManagement": {
+    "Settings": "Inställningar"
+  },
+  "AbpTenantManagement": {
+    "DisplayName:AdminEmailAddress": "Admin e-postadress",
+    "DisplayName:AdminPassword": "Adminlösenord",
+    "TenantDeletionConfirmationMessage": "Är du säker på att du vill ta bort hyresgäst {{0}}?",
+    "TenantName": "Hyresgästnamn",
+    "Tenants": "Hyresgäster"
+  },
+  "AbpUi": {
+    "AreYouSure": "Är du säker?",
+    "Cancel": "Avbryt",
+    "ChangePassword": "Ändra lösenord",
+    "Delete": "Ta bort",
+    "Edit": "Redigera",
+    "Error": "Fel",
+    "Language": "Språk",
+    "LoadMore": "Ladda mer",
+    "Ok": "OK",
+    "PagerSearch": "Sök",
+    "Select": "Välj",
+    "Yes": "Ja"
+  },
+  "AbpUiMultiTenancy": {
+    "GivenTenantIsNotAvailable": "Den angivna hyresgästen är inte tillgänglig.",
+    "Name": "Förnamn",
+    "NotSelected": "Inte vald",
+    "Switch": "Byt",
+    "SwitchTenantHint": "Välj en hyresgäst att byta till.",
+    "Tenant": "Hyresgäst"
+  },
+  "App": {
+    "NetworkErrorMessage": "Kontrollera din anslutning och försök igen.",
+    "NetworkErrorTitle": "Ingen internetanslutning"
+  },
+  "Theme": {
+    "ColorMode": "Tema",
+    "Dark": "Mörk",
+    "Light": "Ljus",
+    "System": "System"
+  },
+  "MyProjectName": {
+    "Menu:Home": "Home",
+    "Welcome": "Välkommen",
+    "LongWelcomeMessage": "Välkommen till applikationen. Detta är ett startup-projekt baserat på ABP-ramverket. För mer information, besök abp.io."
+  }
+}
