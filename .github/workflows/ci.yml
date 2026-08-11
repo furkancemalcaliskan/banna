@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Check licenses, advisories, bans, and sources
         uses: EmbarkStudios/cargo-deny-action@v2
 
@@ -35,7 +35,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Install minimum supported Rust
         uses: dtolnay/rust-toolchain@1.97.1
       - name: Check all targets at MSRV
@@ -53,7 +53,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - name: Check out repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Install minimum supported Rust
         uses: dtolnay/rust-toolchain@1.97.1
       - name: Check all targets
@@ -66,7 +66,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Set up Node.js
         uses: actions/setup-node@v6
         with:
