@@ -53,6 +53,7 @@ const RELEASE_WORKFLOW_CONTRACTS = [
   ["binary provenance attestation", "actions/attest-build-provenance@v3"],
   ["existing tag verification", "--verify-tag"],
   ["GitHub Release publication", "gh release create"],
+  ["version-only GitHub Release title", '--title "$RELEASE_REF"'],
 ];
 
 function readText(file) {

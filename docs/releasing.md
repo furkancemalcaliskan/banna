@@ -48,6 +48,8 @@ The custom release assets are executable bundles, their checksums, and the
 aggregate `SHA256SUMS` manifest. GitHub automatically adds source ZIP/tarball
 links to every tag-backed Release; GitHub does not provide a setting to remove
 those links. They are not Banna's supported distribution artifacts.
+The GitHub Release title is the version ref alone (`vX.Y.Z`); the repository
+name and versioned release-note heading provide the product context.
 
 Enable immutable GitHub Releases. Never move or recreate a published tag; make
 a new patch release to correct a release.
