@@ -193,5 +193,5 @@ jobs:
             artifacts/SHA256SUMS \
             --verify-tag \
             --latest \
-            --title "Banna $RELEASE_REF" \
+            --title "$RELEASE_REF" \
             --notes-file "docs/releases/$RELEASE_REF.md"
