@@ -20,6 +20,11 @@ your runtime architecture or replace ABP: it automates a focused development
 workflow while leaving the generated source in your repository for review and
 continued ownership.
 
+> **Independence and trademarks:** Banna is an independent open-source project.
+> It is not affiliated with, sponsored by, or officially endorsed by Volosoft
+> or the ABP Framework project. The ABP name and related marks belong to their
+> respective owners.
+
 > **Project status:** Banna is preparing its first public release. Generated
 > output and CLI contracts may still evolve before `1.0.0`. Use version control,
 > start with `--dry-run`, and review every generated diff.
@@ -183,10 +188,12 @@ must also follow [AGENTS.md](AGENTS.md).
 ## Licensing
 
 Banna's original Rust code, documentation, and project-specific content are
-available under the [Apache License 2.0](LICENSE). Original Banna template
-fragments carry an additional permission allowing generated output to be used
-under the recipient's chosen terms, including proprietary terms and without
-attribution; see [Generated-code licensing](docs/generated-code-licensing.md).
+available under the [Apache License 2.0](LICENSE), except for identified
+third-party material. Original Banna template fragments carry an additional
+permission allowing generated output to be used under the recipient's chosen
+terms, including proprietary terms and without attribution; see
+[Generated-code licensing](docs/generated-code-licensing.md). That permission
+does not relicense third-party material.
 
 The embedded React Native scaffold is a modified derivative of the ABP
 Framework 8.3 React Native template and remains LGPL-3.0-only. Its exact scope,
