@@ -1257,6 +1257,50 @@ export const appConfig: ApplicationConfig = {
     }
 
     #[test]
+    fn generated_react_native_project_preserves_legal_payload() {
+        let fixture = tempfile::tempdir().expect("fixture should exist");
+        fs::create_dir_all(fixture.path().join("src/Acme.BookStore.Domain"))
+            .expect("domain should exist");
+
+        apply_project_meta_change(
+            &RecordingRunner::default(),
+            &ProjectMetaChangeRequest {
+                project_root: fixture.path(),
+                theme_changed: false,
+                theme: AbpTheme::Basic,
+                override_changed: false,
+                override_css: BootstrapOverride::None,
+                mobile_changed: true,
+                mobile_ui: MobileUi::ReactNative,
+            },
+            &mut |_| {},
+        )
+        .expect("React Native scaffold should be generated");
+
+        let generated = fixture.path().join("react-native");
+        let notice =
+            fs::read_to_string(generated.join("NOTICE.md")).expect("generated notice should exist");
+        assert!(notice.contains("abpframework/abp/tree/rel-8.3"));
+        assert!(notice.contains("LGPL-3.0-only"));
+        assert!(notice.contains("authors and contributors"));
+        assert!(notice.contains("modified derivative"));
+
+        for file in ["LICENSE.LGPL-3.0-only.txt", "LICENSE.GPL-3.0-only.txt"] {
+            let actual = fs::read(generated.join(file)).expect("generated license should exist");
+            let expected = read_project_file(&format!("Vanilla/react-native/{file}"))
+                .expect("embedded license should exist");
+            assert_eq!(actual, expected, "generated {file} must remain complete");
+        }
+
+        let lgpl = fs::read_to_string(generated.join("LICENSE.LGPL-3.0-only.txt"))
+            .expect("generated LGPL text should be readable");
+        assert!(lgpl.contains("GNU LESSER GENERAL PUBLIC LICENSE"));
+        let gpl = fs::read_to_string(generated.join("LICENSE.GPL-3.0-only.txt"))
+            .expect("generated GPL text should be readable");
+        assert!(gpl.contains("GNU GENERAL PUBLIC LICENSE"));
+    }
+
+    #[test]
     fn switches_standalone_angular_theme_in_both_directions_idempotently() {
         let fixture = angular_fixture();
         let angular = fixture.path().join("angular");

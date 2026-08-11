@@ -31,7 +31,10 @@ customized from this public upstream source:
 
 - <https://github.com/abpframework/abp/tree/rel-8.3/templates/app/react-native>
 - Version line: `rel-8.3`
-- Repository license: LGPL-3.0-only
+- Repository license expression: `LGPL-3.0-only`, explicitly declared by
+  [`rel-8.3/common.props`](https://github.com/abpframework/abp/blob/rel-8.3/common.props)
+- License text: upstream
+  [`rel-8.3/LICENSE.md`](https://github.com/abpframework/abp/blob/rel-8.3/LICENSE.md)
 - Local scope: `projects/Vanilla/react-native/`, excluding Banna artwork and
   local notice/license files
 
@@ -41,6 +44,12 @@ into the scaffold. Attribution and a summary of modifications are stored in
 `THIRD_PARTY_NOTICES.md` and the scaffold-local `NOTICE.md`. The Cargo package
 uses the conservative SPDX expression `Apache-2.0 AND LGPL-3.0-only` because it
 distributes both scopes.
+
+The upstream repository is published by the `abpframework` GitHub organization
+and describes the project as community-driven. Copyright remains with the
+respective upstream authors, contributors, and any other named holders, as
+recorded by upstream source notices and repository history; no single corporate
+copyright holder is inferred here.
 
 This resolves the earlier concern that the mobile scaffold might be sourced
 from ABP Commercial.

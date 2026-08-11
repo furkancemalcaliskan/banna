@@ -10,17 +10,28 @@ irrevocable, non-exclusive permission to use, copy, modify, merge, publish,
 distribute, sublicense, and sell that generated material under terms of the
 recipient's choice, without an attribution requirement.
 
-This additional output permission applies to Banna's original templates under
-`templates/` and original fragments assembled by the Rust generator. The
+## Banna-original generated material
+
+This additional output permission applies only to Banna's original templates
+under `templates/` and original fragments assembled by the Rust generator. The
 maintainer confirms that these templates and fragments express Banna's original,
 opinionated generation style and were not copied from ABP Suite or another code
 generator.
 
-This permission does not override rights in material supplied by the user or a
-third party. In particular, a generated React Native project includes the
-modified ABP Framework rel-8.3 scaffold from
-`projects/Vanilla/react-native/`, which remains under LGPL-3.0-only. Its notice
-and license files are copied into the generated project. JavaScript, Rust, and
-.NET dependencies retain their respective licenses.
+## Material not covered by the additional permission
+
+The additional permission does not grant rights in, override, or relicense
+material supplied by the user or a third party. JavaScript, Rust, and .NET
+dependencies retain their respective licenses, as does any user-owned source
+that Banna reads or modifies.
+
+In particular, a generated React Native project includes the modified ABP
+Framework `rel-8.3` scaffold from `projects/Vanilla/react-native/`. Upstream
+`rel-8.3/common.props` explicitly declares `LGPL-3.0-only`; that scope is not
+changed by Banna's Apache-2.0 license or additional output permission. The
+generated project receives the scaffold-local `NOTICE.md`, the complete LGPLv3
+text, and the incorporated GPLv3 text. See
+[`THIRD_PARTY_NOTICES.md`](../THIRD_PARTY_NOTICES.md) for the verified upstream
+source, attribution, modification summary, and exact local boundary.
 
 Generated output is provided without warranty, to the extent permitted by law.

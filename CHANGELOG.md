@@ -5,6 +5,13 @@ based on Keep a Changelog, and releases follow Semantic Versioning.
 
 ## Unreleased
 
+### Changed
+
+- Clarified Banna's independence, trademark position, generated-output license
+  boundary, and verified ABP Framework `rel-8.3` attribution while adding a
+  regression test for the legal payload copied into generated React Native
+  projects.
+
 ### Fixed
 
 - Keep automated GitHub Release titles version-only so maintainers do not need
