@@ -5,6 +5,11 @@ based on Keep a Changelog, and releases follow Semantic Versioning.
 
 ## Unreleased
 
+### Fixed
+
+- Keep automated GitHub Release titles version-only so maintainers do not need
+  to remove a redundant product-name prefix after every release.
+
 ## [0.1.0] - 2026-08-11
 
 ### Added

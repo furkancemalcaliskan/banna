@@ -73,6 +73,7 @@ permissions:
   actions/attest-build-provenance@v3
   --verify-tag
   gh release create
+  --title "$RELEASE_REF"
 `;
   const errors = validateReleaseWorkflow(workflow);
   assert.ok(errors.some((error) => error.includes("Windows ARM64 binary")));
