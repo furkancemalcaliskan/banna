@@ -178,7 +178,7 @@ jobs:
           cd artifacts
           sha256sum *.tar.gz *.zip >SHA256SUMS
       - name: Attest binary bundle provenance
-        uses: actions/attest-build-provenance@v3
+        uses: actions/attest-build-provenance@v4
         with:
           subject-path: |
             artifacts/*.tar.gz
