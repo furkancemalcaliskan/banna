@@ -15,6 +15,16 @@ const ordinary = {
   baseRepository: "owner/banna",
 };
 
+const funding = {
+  title: "chore(repository): add funding configuration",
+  body: "Adds the repository funding configuration.",
+  head: "chore/funding-configuration-develop",
+  base: "develop",
+  actor: "maintainer",
+  headRepository: "owner/banna",
+  baseRepository: "owner/banna",
+};
+
 test("accepts an ordinary issue pull request to develop", () => {
   assert.deepEqual(validatePullRequest(ordinary), []);
 });
@@ -22,6 +32,60 @@ test("accepts an ordinary issue pull request to develop", () => {
 test("rejects a mismatched issue and branch", () => {
   const errors = validatePullRequest({ ...ordinary, body: "Closes #43" });
   assert.ok(errors.some((error) => error.includes("source branch belongs to #42")));
+});
+
+test("accepts the designated issue-free funding maintenance branches", () => {
+  assert.deepEqual(validatePullRequest(funding), []);
+  assert.deepEqual(
+    validatePullRequest({
+      ...funding,
+      head: "chore/funding-configuration-main",
+      base: "main",
+    }),
+    [],
+  );
+});
+
+test("rejects funding maintenance with the wrong target or title", () => {
+  assert.ok(
+    validatePullRequest({ ...funding, base: "main" }).some((error) =>
+      error.includes("must target develop"),
+    ),
+  );
+  assert.ok(
+    validatePullRequest({ ...funding, title: "chore(repository): add sponsors" }).some((error) =>
+      error.includes("funding maintenance title must be"),
+    ),
+  );
+});
+
+test("rejects funding maintenance from a fork or with an issue closure", () => {
+  assert.ok(
+    validatePullRequest({ ...funding, headRepository: "contributor/banna" }).some((error) =>
+      error.includes("must originate from this repository"),
+    ),
+  );
+  const closingBodies = [
+    "Closes #42",
+    "Fixes owner/banna#42",
+    "Resolves https://github.com/owner/banna/issues/42",
+  ];
+  for (const body of closingBodies) {
+    assert.ok(
+      validatePullRequest({ ...funding, body }).some((error) =>
+        error.includes("must not close an issue"),
+      ),
+    );
+  }
+});
+
+test("does not generalize the funding exception to lookalike branches", () => {
+  const errors = validatePullRequest({
+    ...funding,
+    head: "chore/funding-configuration-other",
+  });
+  assert.ok(errors.some((error) => error.includes("ordinary issue branch must match")));
+  assert.ok(errors.some((error) => error.includes("exactly one: Closes #<issue>")));
 });
 
 test("accepts the canonical develop promotion", () => {
