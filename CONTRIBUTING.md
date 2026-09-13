@@ -45,6 +45,14 @@ Use focused commits with this form:
 Do not develop directly on `develop` or `main`. Do not mix unrelated cleanup
 with the issue change.
 
+The one-time repository funding maintenance branches
+`chore/funding-configuration-develop` and
+`chore/funding-configuration-main` are a narrow exception to the issue-number
+branch and commit prefix requirements. They must originate in this repository,
+target `develop` and `main` respectively, and use the exact commit and pull
+request title `chore(repository): add funding configuration`. This exception
+does not apply to any other maintenance work.
+
 ## Implementation Expectations
 
 Read [the architecture guide](docs/architecture.md) and, for agent-assisted
@@ -92,6 +100,10 @@ The body must contain exactly one `Closes #<issue>` matching the issue number
 in the branch name. Describe the outcome, exact validation, generated-output or
 compatibility impact, licensing impact, and security considerations. Resolve
 review conversations and keep the branch current before merge.
+
+The designated funding maintenance pull requests above must not contain an
+issue-closing statement. They otherwise follow the same validation and review
+requirements.
 
 Maintainers squash ordinary issue pull requests. A release promotion from
 `develop` to `main` is the documented exception and uses a merge commit. See

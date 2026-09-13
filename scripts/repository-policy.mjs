@@ -22,6 +22,11 @@ const ISSUE_BRANCH = new RegExp(
 );
 const RELEASE_TITLE =
   /^release: promote banna v[0-9]+\.[0-9]+\.[0-9]+ to main$/;
+const FUNDING_TITLE = "chore(repository): add funding configuration";
+const FUNDING_BRANCHES = new Map([
+  ["chore/funding-configuration-develop", "develop"],
+  ["chore/funding-configuration-main", "main"],
+]);
 
 const REQUIRED_FILES = [
   "AGENTS.md",
@@ -202,6 +207,12 @@ function closingIssues(body) {
   return [...body.matchAll(/\bCloses\s+#([1-9][0-9]*)\b/gi)].map((match) => match[1]);
 }
 
+function hasClosingIssueDirective(body) {
+  return /\b(?:close[sd]?|fix(?:e[sd])?|resolve[sd]?)\s+(?:#[1-9][0-9]*|[a-z0-9_.-]+\/[a-z0-9_.-]+#[1-9][0-9]*|https:\/\/github\.com\/[a-z0-9_.-]+\/[a-z0-9_.-]+\/issues\/[1-9][0-9]*)\b/i.test(
+    body,
+  );
+}
+
 export function validatePullRequest(metadata) {
   const title = metadata.title ?? "";
   const body = metadata.body ?? "";
@@ -212,6 +223,22 @@ export function validatePullRequest(metadata) {
   const baseRepository = metadata.baseRepository ?? "";
   const errors = [];
 
+  const fundingBase = FUNDING_BRANCHES.get(head);
+  if (fundingBase !== undefined) {
+    if (base !== fundingBase) {
+      errors.push(`funding maintenance branch ${head} must target ${fundingBase}; received: ${base}`);
+    }
+    if (!headRepository || !baseRepository || headRepository !== baseRepository) {
+      errors.push("funding maintenance must originate from this repository");
+    }
+    if (title !== FUNDING_TITLE) {
+      errors.push(`funding maintenance title must be: ${FUNDING_TITLE}`);
+    }
+    if (hasClosingIssueDirective(body)) {
+      errors.push("funding maintenance must not close an issue");
+    }
+    return errors;
+  }
   if (actor === "dependabot[bot]" && head.startsWith("dependabot/")) {
     if (base !== "develop") errors.push(`Dependabot pull requests must target develop; received: ${base}`);
     return errors;

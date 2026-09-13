@@ -22,6 +22,14 @@ merge commit for this promotion so the release boundary remains visible.
 Dependabot pull requests may keep their generated branch and title, but target
 `develop` and require the same checks and review.
 
+As a one-time maintenance exception, funding configuration may be proposed
+without an issue from the same repository using only
+`chore/funding-configuration-develop` to `develop` and
+`chore/funding-configuration-main` to `main`. Both pull requests and commits
+must be titled `chore(repository): add funding configuration`, and their pull
+request bodies must not close an issue. This exception does not permit other
+issue-free maintenance or promotion of unrelated `develop` history to `main`.
+
 Recommended GitHub settings:
 
 - set `develop` as the default branch;
@@ -96,4 +104,3 @@ cargo publish --locked
 
 Local edits, successful validation, or preparation of release files do not
 authorize a commit, push, merge, tag, release, or registry publication.
-
