@@ -37,7 +37,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v6
       - name: Install minimum supported Rust
-        uses: dtolnay/rust-toolchain@1.97.1
+        uses: dtolnay/rust-toolchain@1.120.0
       - name: Check all targets at MSRV
         run: cargo check --locked --all-targets
 
@@ -55,7 +55,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v6
       - name: Install minimum supported Rust
-        uses: dtolnay/rust-toolchain@1.97.1
+        uses: dtolnay/rust-toolchain@1.120.0
       - name: Check all targets
         run: cargo check --locked --all-targets
       - name: Run native tests
@@ -72,7 +72,7 @@ jobs:
         with:
           node-version: 24
       - name: Install Rust toolchain
-        uses: dtolnay/rust-toolchain@1.97.1
+        uses: dtolnay/rust-toolchain@1.120.0
         with:
           components: clippy, rustfmt
       - name: Check repository policy
